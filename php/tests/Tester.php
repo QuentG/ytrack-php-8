@@ -22,16 +22,13 @@ class Tester implements TesterInterface
             $this->fatal("Can't execute test for this filename.");
         }
 
-        if (!file_exists(self::STUDENT_SOLUTION_BASE_PATH . $exerciseName . '.php')) {
-            $this->fatal("Unable to find student solution.");
-        }
-
         $this->exerciseName = $exerciseName;
     }
 
     public function run(): void
     {
         $this->retrieveExerciseName();
+        $this->checkFiles();
 
         require_once self::STUDENT_SOLUTION_BASE_PATH . $this->exerciseName  . '.php'; // Student Solution
         require_once "../app/" . $this->exerciseName  . '_test.php'; // Solution
@@ -60,5 +57,16 @@ class Tester implements TesterInterface
     private function parseString(string $name): string
     {
         return strtolower(trim($name));
+    }
+
+    private function checkFiles(): void
+    {
+        if (!file_exists(self::STUDENT_SOLUTION_BASE_PATH . $this->exerciseName . '.php')) {
+            $this->fatal("Unable to find student solution.");
+        }
+
+        if (!file_exists("../app/" . $this->exerciseName  . '_test.php')) {
+            $this->fatal("Unable to find solution.");
+        }
     }
 }
