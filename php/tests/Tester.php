@@ -44,7 +44,7 @@ class Tester implements TesterInterface
                     throw new Error('Test failed', 1);
                 }
             } catch (Error $e) {
-                $this->fatal("Test #" . $i . " failed:\n\nError: " . $e->getMessage());
+                $this->fatal("Test #" . $i + 1 . " failed:\n\nError: " . $e->getMessage());
             }
         }
 
