@@ -10,6 +10,8 @@ The second parameter will by default be equal to a space if it is not filled in.
 
 Ex : 
 ```php
+joinWords(['My', 'name', 'is', 'John']); // My name is John
+
 joinWords(['My', 'name', 'is', 'John'], "-"); // My-name-is-John
 ```
 
