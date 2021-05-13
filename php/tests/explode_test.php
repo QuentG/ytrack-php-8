@@ -3,7 +3,8 @@
 $tests = [];
 
 $tests[] = static fn ($eq): bool => $eq(gettype(explodeWords("Hello there")), 'array');
-$tests[] = static fn ($eq): bool => $eq(gettype(explodeWords("", "-")), 'array');
+$tests[] = static fn ($eq): bool => $eq(gettype(explodeWords("Hello-there", "-")), 'array');
+$tests[] = static fn ($eq): bool => $eq(gettype(explodeWords("Hello-there", "-", -1)), 'array');
 
 $tests[] = static fn ($eq): bool => $eq(explodeWords('La fonction explode'), ['La', 'fonction', 'explode']);
 $tests[] = static fn ($eq): bool => $eq(explodeWords('La-fonction-explode', "-"), ['La', 'fonction', 'explode']);
