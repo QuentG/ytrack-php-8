@@ -45,6 +45,7 @@ class Tester implements TesterInterface
             }
         }
 
+        
         echo "Exercise " . $this->exerciseName . ' passed (' . count($tests) . ' tests)';
     }
 
