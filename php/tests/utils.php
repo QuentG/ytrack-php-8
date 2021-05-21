@@ -9,7 +9,7 @@ function getFunctionContent(string $functionName): ?string
     }
 
     $filename = $reflection->getFileName();
-    $startLine = $reflection->getStartLine() - 1; // it's actually - 1, otherwise you wont get the function() block
+    $startLine = $reflection->getStartLine();
     $length = $reflection->getEndLine() - $startLine;
 
     return implode("", array_slice(file($filename), $startLine, $length));
