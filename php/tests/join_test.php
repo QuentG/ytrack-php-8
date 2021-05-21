@@ -1,8 +1,13 @@
 <?php
 
+require_once "utils.php";
+
 $tests = [];
 
 $reflection = new ReflectionFunction('joinWords');
+$functionContent = getFunctionContent('joinWords');
+
+$tests[] = static fn ($eq): bool => $eq(str_contains($functionContent, "join"), false); // Not authorized to use php function "join"
 
 $tests[] = static fn ($eq): bool => $eq($reflection->getNumberOfParameters(), 2);
 $tests[] = static fn ($eq): bool => $eq($reflection->getNumberOfRequiredParameters(), 1);
