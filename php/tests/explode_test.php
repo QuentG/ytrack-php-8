@@ -1,12 +1,16 @@
 <?php
 
+require_once "utils.php";
+
 $tests = [];
 
 $reflection = new ReflectionFunction('explodeWords');
+$functionContent = getFunctionContent($reflection);
 
 $tests[] = static fn ($eq): bool => $eq($reflection->getNumberOfParameters(), 3);
 $tests[] = static fn ($eq): bool => $eq($reflection->getNumberOfRequiredParameters(), 1);
 $tests[] = static fn ($eq): bool => $eq($reflection->hasReturnType(), true);
+$tests[] = static fn ($eq): bool => $eq(str_contains($functionContent, "explode"), false);
 
 $tests[] = static fn ($eq): bool => $eq(gettype(explodeWords("Hello there")), 'array');
 $tests[] = static fn ($eq): bool => $eq(gettype(explodeWords("Hello-there", "-")), 'array');

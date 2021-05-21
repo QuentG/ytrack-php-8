@@ -10,7 +10,7 @@ In this course we will see the basics of the language, (variables, conditions, .
 Create the following variables :
 
 - `firstStr` which is a string of words.
-- `firstEscapeStr` which is a word string containing a new line break character between Hello and the guys : "Helloguys".
+- `firstEscapeStr` which is a word string containing a new line break character.
 - `firstBool` is a boolean.
 - `firstInteger` is an integer.
 - `firstFloat` is an Float.
