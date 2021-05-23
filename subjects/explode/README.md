@@ -15,7 +15,7 @@ The third parameter will by default be equal to `PHP_INT_MAX` if it's not filled
 - If the limit parameter is negative, all components except the last -limit are returned.
 - If the limit parameter is zero, then this is treated as 1.
 
-Ex : 
+Example : 
 ```php
 explodeWords('My name is John'); // ['My', 'name', 'is', 'John']
 

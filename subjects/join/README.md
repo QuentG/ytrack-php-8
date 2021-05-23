@@ -8,7 +8,7 @@ This function will be able to join arrays values with a given separator.
 
 The second parameter will by default be equal to a space if it is not filled in.
 
-Ex : 
+Example : 
 ```php
 joinWords(['My', 'name', 'is', 'John']); // My name is John
 
