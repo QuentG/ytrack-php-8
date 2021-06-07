@@ -1,4 +1,4 @@
-### join
+### Join
 
 ### Instructions
 

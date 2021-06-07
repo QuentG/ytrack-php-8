@@ -1,4 +1,4 @@
-### say-hello-to-functions
+### Say hello to functions
 
 ### Explanations
 
@@ -7,20 +7,25 @@ Now that the basics of `variables` and `loops` are in place, we will finally be 
 Let's see an example and explain him !
 
 ```php
-function foo(): string 
+function getScore(int $score): string 
 {
-    return "Foo";
+    return "Your score : " . $score;
 }
 ```
 
 To create a function, we use the `function` instruction followed by the name we want to give to this function (`foo` here), followed by 2 parentheses.
-Since _php 7.3_ you can specify the return type of the function by putting a colon, and the type (`: string` here).
+Since _php 7.0_ you can specify the return type of the function by putting a colon, and the type (`: string` here).
 
 The instructions to be executed when this function is called will be placed between two braces.
 
 ### Instructions
 
 Create a function `sayHello` who say "Hello".
+
+Create a function `sayHelloTo` who say "Hello $name".
+
+`getDirection` with the following available parameters :
+ - The name : `string`
 
 ### Notions
 

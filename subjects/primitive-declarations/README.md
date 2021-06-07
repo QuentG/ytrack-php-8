@@ -1,4 +1,4 @@
-### primitive-declarations
+### Primitive declarations
 
 ### Welcome !
 
