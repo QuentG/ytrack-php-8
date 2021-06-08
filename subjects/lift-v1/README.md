@@ -23,4 +23,4 @@ Create a function `getDirection` to give the direction in which the elevator sho
 
 ### Notions
 
-[php.net/manual/fr/functions.arguments.php](https://www.php.net/manual/fr/functions.arguments.php)
+- [php.net/manual/fr/functions.arguments.php](https://www.php.net/manual/fr/functions.arguments.php)

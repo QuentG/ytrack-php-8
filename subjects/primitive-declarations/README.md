@@ -15,7 +15,14 @@ $myVariable = "Easy no ?";
 
 > You can notice that we used [camelCase](https://en.wikipedia.org/wiki/Camel_case) (best of all 🔥) for the variable name.
 
-Any variable must be declared by means of the dollar sign `$` followed obligatorily by letters (in upper or lower case) or by an underscore (underscore _). 
+Any variable must be declared by means of the dollar sign `$` followed obligatorily by letters (in upper or lower case) or by an underscore (underscore _).
+
+Variables may represent any type of value, and they may be reassigned to different types.
+
+```php
+$myVariable = 5;
+$myVariable = "Now I am assigned a string ! Fabulous.";
+```
 
 Below is a summary table of incorrect variable declaration syntaxes.
 
@@ -39,7 +46,6 @@ Create the following variables :
 - `firstInteger` is an integer.
 - `firstFloat` is an Float.
 - `firstNull` is NULL.
-
 - `firstArray` is an array containing a property for each primitive types :
     - Ordered values : `2, null, 'Hi', 5.5, false`
 

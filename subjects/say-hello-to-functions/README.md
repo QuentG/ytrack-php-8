@@ -24,7 +24,7 @@ Create a function `sayHello` who say "Hello".
 
 Create a function `sayHelloTo` who say "Hello $name".
 
-`getDirection` with the following available parameters :
+`sayHelloTo` with the following available parameters :
  - The name : `string`
 
 ### Notions
