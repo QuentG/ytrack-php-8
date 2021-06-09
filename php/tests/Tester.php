@@ -58,7 +58,7 @@ class Tester
         }
 
         // Prevents smart kids from skipping the exercise ;)
-        $studentSolutionContent = file_get_contents(self::SOLUTION_BASE_PATH . $this->exerciseName  . '_test.php', true);
+        $studentSolutionContent = file_get_contents(self::STUDENT_SOLUTION_BASE_PATH . $this->exerciseName  . '.php', true);
         if (str_contains($studentSolutionContent, 'exit') || str_contains($studentSolutionContent, 'exit(')) {
             $this->fatal("It's forbidden to use the exit function ! \n It's not good to want to cheat... :(");
         }
