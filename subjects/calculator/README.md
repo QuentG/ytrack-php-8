@@ -18,3 +18,5 @@ calc('((5+3+(1+2)-9)+1) + (9+1)'); // 13
 ### Notions
 
 - [php.net/manual/en/language.operators.arithmetic.php](https://www.php.net/manual/en/language.operators.arithmetic.php)
+- [php.net/manual/en/function.str-split.php](https://www.php.net/manual/en/function.str-split.php)
+- [php.net/manual/en/function.explode.php](https://www.php.net/manual/en/function.explode.php)

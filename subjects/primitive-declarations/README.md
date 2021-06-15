@@ -53,4 +53,4 @@ Create the following variables :
 
 - Variables
 - Primitive types
-- [php.net/manual/fr/language.variables.basics.php](https://php.net/manual/fr/language.variables.basics.php)
+- [php.net/manual/en/language.variables.basics.php](https://php.net/manual/en/language.variables.basics.php)

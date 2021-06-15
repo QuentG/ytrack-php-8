@@ -1,11 +1,15 @@
 <?php
 
+require_once 'utils.php';
+
 $tests = [];
 
-$reflection = new ReflectionMethod('factorial');
+$reflection = new ReflectionFunction('factorial');
+$content = getFunctionContent($reflection);
 
 $tests[] = static fn ($eq): bool => $eq($reflection->getNumberOfParameters(), 1);
 $tests[] = static fn ($eq): bool => $eq($reflection->hasReturnType(), true);
+$tests[] = static fn ($eq): bool => $eq(str_contains($content, 'factorial('), true); // Check recursively
 
 $tests[] = static fn ($eq): bool => $eq(factorial(1), 1);
 $tests[] = static fn ($eq): bool => $eq(factorial(2), 2);

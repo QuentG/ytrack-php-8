@@ -20,5 +20,5 @@ You are not allowed to use `implode` or `join`, make your own.
 ### Notions
 
 - [How to create php function](https://www.w3schools.com/php/php_functions.asp)
-- [php.net/manual/fr/language.operators.string.php](https://www.php.net/manual/fr/language.operators.string.php)
-- [implode](https://www.php.net/manual/fr/function.implode.php)
+- [php.net/manual/en/language.operators.string.php](https://www.php.net/manual/en/language.operators.string.php)
+- [implode](https://www.php.net/manual/en/function.implode.php)

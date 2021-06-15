@@ -16,4 +16,4 @@ sortZeros([5, 6, '0', 1, 0, '0', 8, '0']); // [5, 6, 1, 8, '0', 0, '0', '0'];
 
 ### Notions
 
-- [php.net/manual/fr/function.array-merge.php](https://www.php.net/manual/fr/function.array-merge.php)
+- [php.net/manual/en/function.array-merge.php](https://www.php.net/manual/en/function.array-merge.php)

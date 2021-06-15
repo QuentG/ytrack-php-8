@@ -31,5 +31,5 @@ You are not allowed to use `explode`, make your own.
 ### Notions
 
 - [How to create php function](https://www.w3schools.com/php/php_functions.asp)
-- [php.net/manual/fr/function.array-push.php](https://www.php.net/manual/fr/function.array-push.php)
-- [explode](https://www.php.net/manual/fr/function.explode.php)
+- [php.net/manual/en/function.array-push.php](https://www.php.net/manual/en/function.array-push.php)
+- [explode](https://www.php.net/manual/en/function.explode.php)
