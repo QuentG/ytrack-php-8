@@ -13,7 +13,7 @@ function getScore(int $score): string
 }
 ```
 
-To create a function, we use the `function` instruction followed by the name we want to give to this function (`foo` here), followed by 2 parentheses.
+To create a function, we use the `function` instruction followed by the name we want to give to this function (`getScore` here), followed by 2 parentheses (parameters inside).
 Since _php 7.0_ you can specify the return type of the function by putting a colon, and the type (`: string` here).
 
 The instructions to be executed when this function is called will be placed between two braces.

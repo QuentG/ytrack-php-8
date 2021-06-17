@@ -8,6 +8,8 @@ Create a function `findIn`  who retrieve value of a key in array or false if no 
 - The value key to find : `string`
 - The array : `array`
 
+⚠ Use recursivity !!!
+
 Use this array : 
 ```php
 $tab = [
