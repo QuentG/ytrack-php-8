@@ -2,13 +2,14 @@
 
 ### Instructions
 
-Create a `calc` function which will execute the calculation passed as a parameter.
+Créez une fonction `calc` qui exécutera le calcul passé en paramètre.
 
-`calc` with the following available parameters :
-- The calcul to execute : `string`
+`calc` avec les paramètres disponibles suivants :
+- Le calcul à exécuter : `string`
 
-⚠ Can contain only '+', '-', '(', ')', spaces, and integers.
+⚠ Ne peut contenir que '+', '-', '(', ')', des espaces et des entiers.
 
+Exemple : 
 ```php
 calc('1 + 1'); // 2
 calc('9-5 + 2'); // 6

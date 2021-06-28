@@ -2,20 +2,20 @@
 
 ### Instructions
 
-Create a `explodeWords` function that takes a string as the first argument, a separator as the second argument and a limit as the third argument.
+Créez une fonction `explodeWords` qui prend une chaîne comme premier argument, un séparateur comme deuxième argument et une limite comme troisième argument.
 
-This function will be able to returns an array of strings, each of which is a substring of string formed by splitting it on boundaries formed by the string separator.
+Cette fonction pourra renvoyer un tableau de chaînes, chacune étant une sous-chaîne de chaîne formée en la divisant sur des limites formées par le séparateur de chaîne.
 
-The second parameter will by default be equal to a space if it's not filled in.
+Le deuxième paramètre sera par défaut égal à un espace s'il n'est pas renseigné.
 
-The third parameter will by default be equal to `PHP_INT_MAX` if it's not filled in.
+Le troisième paramètre sera par défaut égal à `PHP_INT_MAX` s'il n'est pas renseigné.
 
-/!\ Take care about limit parameter /!\
-- If limit is set and positive, the returned array will contain a maximum of limit elements with the last element containing the rest of string.
-- If the limit parameter is negative, all components except the last -limit are returned.
-- If the limit parameter is zero, then this is treated as 1.
+/!\ Attention au paramètre limit /!\
+- Si limit est défini et positif, le tableau renvoyé contiendra un maximum d'éléments limit avec le dernier élément contenant le reste de la chaîne.
+- Si le paramètre limit est négatif, tous les composants sauf le dernier -limit sont renvoyés.
+- Si le paramètre limite est égal à zéro, alors celui-ci est traité comme 1.
 
-Example : 
+Exemple : 
 ```php
 explodeWords('My name is John'); // ['My', 'name', 'is', 'John']
 
@@ -26,7 +26,7 @@ explodeWords('My-name/is-John/and-i-love-apple', '/', 2); // ['My-name', 'is-Joh
 explodeWords('My-name/is-John', '/', -1); // ['My-name']
 ```
 
-You are not allowed to use `explode`, make your own.
+Vous n'êtes pas autorisé à utiliser `explode`, faites la vôtre.
 
 ### Notions
 

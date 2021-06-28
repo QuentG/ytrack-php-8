@@ -1,31 +1,32 @@
 ### Say hello to functions
 
-### Explanations
+### Explications
 
-Now that the basics of `variables` and `loops` are in place, we will finally be able to see how to build our own `functions` 👀.
+Maintenant que les bases des `variables` et des `boucles` sont en place, nous allons enfin pouvoir voir comment construire nos propres `fonctions` 👀.
 
-Let's see an example and explain him !
+Voyons un exemple et expliquons-le !
 
 ```php
-function getScore(int $score): string 
+function getScore(int $score): string
 {
-    return "Your score : " . $score;
+    return "Votre score : " . $score ;
 }
 ```
 
-To create a function, we use the `function` instruction followed by the name we want to give to this function (`getScore` here), followed by 2 parentheses (parameters inside).
-Since _php 7.0_ you can specify the return type of the function by putting a colon, and the type (`: string` here).
+Pour créer une fonction, nous utilisons l'instruction `function` suivie du nom que nous voulons donner à cette fonction (`getScore` ici), suivi de 2 parenthèses. A l'intérieur de ses parenthèses nous retrouvons les différents paramètres (optionnel ou non).
 
-The instructions to be executed when this function is called will be placed between two braces.
+Depuis _php 5.2_ vous pouvez spécifier le type de retour de la fonction en mettant un deux-points, et le type (`: string` ici).
+
+Les instructions à exécuter lors de l'appel de cette fonction seront placées entre deux accolades.
 
 ### Instructions
 
-Create a function `sayHello` who say "Hello".
+Créez une fonction `sayHello` qui dit "Bonjour".
 
-Create a function `sayHelloTo` who say "Hello $name".
+Créez une fonction `sayHelloTo` qui dit "Hello $name".
 
-`sayHelloTo` with the following available parameters :
- - The name : `string`
+`sayHelloTo` avec les paramètres disponibles suivants :
+- Le nom : `chaîne`
 
 ### Notions
 

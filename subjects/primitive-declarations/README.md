@@ -1,53 +1,55 @@
 ### Primitive declarations
 
-### Welcome !
+### Bienvenue !
 
-Welcome to the PHP Pool ! The idea of this pool is to introduce you to `PHP` (fabulous language).
-In this course we will see the basics of the language, (variables, conditions, ...) to the fundamentals of OOP (Object-oriented programming).
+Bienvenue dans la piscine PHP 8 ! L'idée de cette piscine est de vous présenter `PHP` (langage fabuleux).
+Dans ce cours nous verrons les bases du langage, (variables, conditions, ...) jusqu'aux fondamentaux de la POO (Programmation Orientée Objet).
 
-### Explanations
+### Explications
 
-The very **first thing** to learn in any language is *"How do I declare a variable ?"*
+La toute **première chose** à apprendre dans n'importe quel langue est *"Comment déclarer une variable ?"*
 
-```php 
-$myVariable = "Easy no ?";
-```
-
-> You can notice that we used [camelCase](https://en.wikipedia.org/wiki/Camel_case) (best of all 🔥) for the variable name.
-
-Any variable must be declared by means of the dollar sign `$` followed obligatorily by letters (in upper or lower case) or by an underscore (underscore _).
-
-Variables may represent any type of value, and they may be reassigned to different types.
+Voyons un exemple de ce pas : 
 
 ```php
-$myVariable = 5;
-$myVariable = "Now I am assigned a string ! Fabulous.";
+$myVariable = "Facile non ?";
 ```
 
-Below is a summary table of incorrect variable declaration syntaxes.
+> Vous pouvez remarquer que nous avons utilisé [camelCase](https://en.wikipedia.org/wiki/Camel_case) (le meilleur de tous 🔥) pour le nom de la variable.
+
+Toute variable doit être déclarée au moyen du signe dollar `$` suivi obligatoirement de lettres (en majuscule ou en minuscule) ou d'un trait de soulignement (trait de soulignement _).
+
+Les variables peuvent représenter n'importe quel type de valeur, et elles peuvent être réaffectées à différents types.
 
 ```php
-$var 1 = "toto"; // No space
-$var-1 = "toto"; // No dash
-$-var = "toto"; // No dash
-$20var = "toto"; // Cannot start with a number
-var = "toto"; // Necessarily a $ in front of the name
+$maVariable = 5 ;
+$myVariable = "Maintenant, on m'attribue une chaîne ! Fabuleux.";
 ```
 
-> **_Note_** : PHP is one of the few programming languages that accepts accented characters in variable names. However, using them is strongly discouraged for reasons of maintenance and portability.
+Vous trouverez ci-dessous un tableau récapitulatif des syntaxes de déclaration de variables incorrectes.
+
+```php
+$var 1 = "toto" ; // Pas d'espace
+$var-1 = "toto" ; // Pas de tiret
+$-var = "toto" ; // Pas de tiret
+$20var = "toto" ; // Impossible de commencer par un nombre
+var = "toto" ; // Nécessairement un $ devant le nom
+```
+
+> **_Note_** : PHP est l'un des rares langages de programmation qui accepte les caractères accentués dans les noms de variables. Cependant, leur utilisation est fortement déconseillée pour des raisons de maintenance et de portabilité.
 
 ### Instructions
 
-Create the following variables :
+Créez les variables suivantes :
 
-- `firstStr` which is a string of words.
-- `firstEscapeStr` which is a word string containing a new line break character.
-- `firstBool` is a boolean.
-- `firstInteger` is an integer.
-- `firstFloat` is an Float.
-- `firstNull` is NULL.
-- `firstArray` is an array containing a property for each primitive types :
-    - Ordered values : `2, null, 'Hi', 5.5, false`
+- `firstStr` qui est une chaîne de mots.
+- `firstEscapeStr` qui est une chaîne de mots contenant un nouveau caractère de saut de ligne.
+- `firstBool` est un booléen.
+- `firstInteger` est un entier.
+- `firstFloat` est un float.
+- `firstNull` est NULL.
+- `firstArray` est un tableau contenant une propriété pour chaque type primitif :
+  - Valeurs ordonnées : `2, null, 'Hi', 5.5, false`
 
 ### Notions
 

@@ -2,12 +2,12 @@
 
 ### Instructions
 
-Create a function `sortZeros`  who can sort an array by moving all of the zero elements (0 or '0') to the end also make sure to keep the order of the zeros.
+Créez une fonction `sortZeros` qui va trier un tableau en déplaçant tous les éléments zéro (0 ou '0') à la fin, assurez-vous également de conserver l'ordre des zéros.
 
-`sortZeros` with the following available parameters :
-- The tab to sort : `array`
+`sortZeros` avec les paramètres disponibles suivants :
+- Le tableau à trier : `array`
 
-Example :
+Exemple :
 ```php
 sortZeros([5, 0, 6, 1, 0, 8]); // [5, 6, 1, 8, 0, 0]
 

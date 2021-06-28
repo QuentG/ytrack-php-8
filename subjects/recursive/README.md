@@ -1,12 +1,12 @@
 ### Recursive
 
-### Explanations
+### Explications
 
-A recursive function is a function that calls itself.
+Une fonction récursive est une fonction qui s'appelle elle-même.
 
-They are generally used to handle a case with an infinite number of possibilities and stop when the exit condition is reached.
+Elles sont généralement utilisées pour traiter un cas avec un nombre infini de possibilités et s'arrêtent lorsque la condition de sortie est atteinte.
 
-Example : 
+Exemple : 
 
 ```php
 function recursive($arg1, $arg2, ...) 
@@ -19,12 +19,14 @@ function recursive($arg1, $arg2, ...)
 }
 ```
 
+> ⚠ Attention aux boucles infinies
+
 ### Instructions
 
-Create a function `factorial`  who calculate de factorial of the number passed in argument. 
+Créez une fonction `factorial` qui calcule la factorielle du nombre passé en argument.
 
-`factorial` with the following available parameters :
-- The number : `int`
+`factorial` avec les paramètres disponibles suivants :
+- Le numéro : `int`
 
 ### Notions
 

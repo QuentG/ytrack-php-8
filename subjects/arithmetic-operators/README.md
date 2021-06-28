@@ -1,31 +1,31 @@
 ### Arithmetic operators
 
-### Explanations
+### Explications
 
-There are five basic arithmetic operators: 
+Il existe cinq opérateurs arithmétiques de **base** :
 
-| Operator |   Name  | Example | Result |
+| Opérateur | Nom | Exemple | Résultat |
 | :------- |:-------:| -------:| ------:|
-|     +	   |    Addition    |	$x + $y	 | Sum of $x and $y.
-|     -	   |   Subtraction  |	$x - $y	 | Difference of $x and $y.
-|     *	   | Multiplication |   $x * $y  | Product of $x and $y.
-|     /	   |    Division	|   $x / $y  | Quotient of $x and $y
-|     %    |	Modulus     |	$x % $y	 | Remainder of $x divided by $y.
+| + | Addition | $x + $y | Somme de $x et $y.
+| - | Soustraction | $x - $y | Différence de $x et $y.
+| * | Multiplication | $x * $y | Produit de $x et $y.
+| / | Division | $x / $y | Quotient de $x et $y
+| % | Modulo | $x % $y | Reste de $x divisé par $y.
 
 ### Instructions
 
-Create the following variables with operators and the following numbers :
+Créez les variables suivantes avec les opérateurs et les nombres suivants :
 
 ```php
-$firstNbr = 100;
-$secondNbr = 35;
+$firstNbr = 100 ;
+$secondNbr = 35 ;
 ```
 
-- `firstSum` The sum of two numbers
-- `firstSub` The subtraction of two numbers
-- `firstMult` The multiplication of two numbers
-- `firstDivision` The division of two numbers
-- `firstModulus` The modulus of two numbers
+- `firstSum` La somme de deux nombres
+- `firstSub` La soustraction de deux nombres
+- `firstMult` La multiplication de deux nombres
+- `firstDivision` La division de deux nombres
+- `firstModulus` Le module de deux nombres
 
 ### Notions
 
