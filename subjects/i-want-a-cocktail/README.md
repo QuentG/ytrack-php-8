@@ -1,4 +1,4 @@
-### I want a car
+### I want a cocktail
 
 ### Explications
 
@@ -12,7 +12,7 @@ Une classe regroupe des fonctions et des variables (appelées cette fois `attrib
 
 On appelle ce principe **l'encapsulation des données**, le but de l'encapsulation des données étant de ne pas pouvoir accéder aux données de l'objet directement mais via des fonctions (appelées ici `méthodes`). Chaque attribut peut donc disposer de droits d'accès à l'extérieur de la classe
 
-Voyons de suite un exemple pour illuster tout cela :
+Voyons de suite un exemple pour illustrer cela :
 
 ```php
 <?php
@@ -20,9 +20,9 @@ Voyons de suite un exemple pour illuster tout cela :
  class Voiture 
  {
       /** Déclaration des attributs */
-      private int $niveauCarburant;
-      private int $nombrePortes;
-      private int $nombreRoues;
+      public float $niveauCarburant;
+      public int $nombrePortes;
+      public int $nombreRoues;
 
       /**
       * Cette méthode un peu spéciale est le constructeur, 
@@ -31,7 +31,7 @@ Voyons de suite un exemple pour illuster tout cela :
       */
       public function __construct()
       {
-           $this->niveauCarburant = 50;
+           $this->niveauCarburant = 45.4;
            $this->nombrePortes = 3;
            $this->nombreRoues = 4;
       }
@@ -58,13 +58,26 @@ var_dump($voiture1);
   ["nombrePortes"] => int(3)
   ["nombreRoues"] => int(4)
 }
+
+// Récupération d'un attribut
+$voiture1->niveauCarburant // 50
 ```
-
-
 
 ### Instructions
 
+Créer une classe nommée `Mojito`.
 
+Cette classe devra avoir les attributs (+ valeurs de base) suivants : 
+
+- `alcoholRate` : Le taux d'alcool dans le sang 
+  - Type : float
+  - Valeur : 0.15
+- `ingredients` : Les ingrédients qui constitue le Mojito
+    - Type : array
+    - Valeur : rhum, citron vert, eau gazeuse, menthe, sucre
+- `price` : Le prix du Mojito
+    - Type : int
+    - Valeur : 8
 
 ### Notions
 
