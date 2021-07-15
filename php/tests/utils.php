@@ -1,6 +1,7 @@
 <?php
 
-const PHP_EXTENSION = "php";
+const STUDENT_SOLUTION_BASE_PATH = "/jail/student/";
+const PHP_EXTENSION = ".php";
 
 function getFunctionContent(ReflectionFunction $function): string
 {
@@ -16,17 +17,26 @@ function getFunctionContent(ReflectionFunction $function): string
     );
 }
 
-function getFileContent(string $fileName): bool|string
+function executeFile(string $fileName): array
 {
-    return file_get_contents($fileName . PHP_EXTENSION);
+    $result = [];
+    exec("php " . STUDENT_SOLUTION_BASE_PATH . $fileName . PHP_EXTENSION, $result);
+
+    return $result;
 }
+
 
 function countLinesInFile(string $fileName): int
 {
-    return count(file($fileName . PHP_EXTENSION));
-}
+    $content = file(STUDENT_SOLUTION_BASE_PATH . $fileName . PHP_EXTENSION);
+    if (!$content) {
+        return 0;
+    }
 
-function executeFile(string $fileName): bool|string
-{
-    return exec("php " . $fileName  . PHP_EXTENSION);
+    $content = array_filter(
+        preg_replace('~[\r\n]+~', "", $content), // Replace white space by empty string
+        static fn ($val) => "<?php" !== $val && "" !== $val // Delete <?php and empty string in array
+    );
+
+    return count($content);
 }

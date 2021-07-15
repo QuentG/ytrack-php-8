@@ -13,7 +13,7 @@ Créer une fonction `f` qui renvoie un tableau associatif contenant 3 éléments
 __Astuce__ : Une fonction peut retourner une autre fonction. Utiliser des fonctions anonymes, vous verrez c'est cool :D
 
 __Astuce 2__ (parce qu'on est cool) : Voici 2 manières de déclarer une fonction anonyme 
-
+ 
 ```php
 static fn () => ....
 

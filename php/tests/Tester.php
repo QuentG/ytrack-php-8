@@ -14,6 +14,7 @@ class Tester
         $this->retrieveExerciseName();
         $this->checkFiles();
 
+        require_once "utils.php";
         require_once self::STUDENT_SOLUTION_BASE_PATH . $this->exerciseName  . '.php'; // Student Solution
         require_once self::SOLUTION_BASE_PATH . $this->exerciseName  . '_test.php'; // Solution
 
@@ -21,11 +22,11 @@ class Tester
 
         foreach ($tests as $i => $t) {
             try {
-                if (!$t($eq)) {
+                if (!$t($eq, $this->exerciseName)) {
                     throw new Error('Test failed', 1);
                 }
             } catch (Error $e) {
-                $this->fatal("Test #" . $i + 1 . " failed:\n\nError: " . $e->getMessage());
+                $this->fatal("Test #" . $i + 1 . " failed: \n \n Error: " . $e->getMessage());
             }
         }
 
@@ -36,10 +37,10 @@ class Tester
     {
         $exerciseName = getopt('t:', ['required:'])['t'] ?? null;
         if (null === $exerciseName) {
-            $this->fatal("Missing exercise, usage:\nphp test.php -texercise-name");
+            $this->fatal("Missing exercise, usage: \n php test.php -texercise-name");
         }
 
-        $exerciseName = $this->parseString($exerciseName);
+        $exerciseName = strtolower(trim($exerciseName));
         if ('test' === $exerciseName) {
             $this->fatal("Can't execute test for this filename.");
         }
@@ -68,10 +69,5 @@ class Tester
     {
         echo $message;
         exit(1);
-    }
-
-    private function parseString(string $name): string
-    {
-        return strtolower(trim($name));
     }
 }

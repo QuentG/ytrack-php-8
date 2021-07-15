@@ -15,7 +15,7 @@ B | BACKWARDS
 
 Créez une fonction `manageMovements` qui prend une chaine de caractères parmi R, L, F, B et retourne un array contenant la liste des instructions à donner au robot.
 
-**Attention** si l'utilisateur a tappé une instruction en double (RR, LL, FF, BB), à la deuxième instruction, indiquez par exemple 'RIGHT AGAIN'.
+**Attention** si l'utilisateur a tapé une instruction en double (RR, LL, FF, BB), à la deuxième instruction, indiquez par exemple 'RIGHT AGAIN'.
 
 ### Notions
 

@@ -1,7 +1,5 @@
 <?php
 
-require_once 'utils.php';
-
 $tests = [];
 
 $reflection = new ReflectionFunction('factorial');

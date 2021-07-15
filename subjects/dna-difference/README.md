@@ -12,10 +12,10 @@ CATCGTAATGACGGCCT
 
 > Les différences sont représentées par `^`. Par exemple ici, la réponse est 7.
 
-Créez une fonction `dnaDiff` qui prend en paramètres obligatoires deux `string` et retourne le nombre de différences entre les deux brins d'ADN. Si les deux brins d'ADN ne vont pas la même taille retournez false.
+Créez une fonction `dnaDiff` qui prend en paramètres obligatoires deux `string` et retourne le nombre de différences entre les deux brins d'ADN. Si les deux brins d'ADN ne font pas la même taille retournez false.
 
 Vous n'êtes pas autorisé à utiliser les fonctions natives `array_diff` ou `array_diff_assoc`, faites la vôtre.
 
 ### Notions
 
-- []()
+- [php.net/manual/en/function.array-diff.php](https://www.php.net/manual/en/function.array-diff.php)

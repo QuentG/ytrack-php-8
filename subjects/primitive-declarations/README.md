@@ -7,6 +7,54 @@ Dans ce cours nous verrons les bases du langage, (variables, conditions, ...) ju
 
 ### Explications
 
+#### La syntaxe de PHP
+
+La syntaxe et la sémantique de PHP sont similaires à celles de la plupart des autres langages de programmation, avec en plus le fait que tout code PHP est contenu entre des sortes d'étiquette appelé ***balise***.
+
+Tout code PHP doit être placé à l'intérieur de ce qui suit :
+
+```php
+<?php // On indique à notre fichier / navigateur que l'on va écrire/exécuter du code PHP
+
+...Code PHP....
+
+?> Cette balise n'est utile que dans le cas ou l'on met du PHP directement dans une page HTML.
+```
+
+_Note : Pour tous les exercises de ce parcours il ne sera pas nécessaire de mettre la balise `?>` à la fin de vos fichiers 😉._
+
+***
+
+#### Le Point-virgule
+En PHP comme dans beaucoup d'autre langage, il faut marquer l’arrêt d'une instruction.
+Le point-virgule signifie la fin de celle-ci. Il est indispensable au bon fonctionnement du script. 
+
+Si nous voulions afficher "Hello !" plusieurs fois, nous aurions besoin de mettre un point-virgule à la fin de chaque instructions comme dans cet exemple :
+
+```php
+<?php
+
+echo "Hello !";
+echo "Hello !";
+echo "Hello !";
+```
+
+Affiche :
+
+Hello !Hello !Hello !
+
+---
+
+#### C'est parti ? 🙌
+
+Maintenant que nous avons vu les bases syntaxiques du langage, nous allons pouvoir commencer à rentrer dans le vif du sujet. 
+
+***Du Développement !*** 
+
+***
+
+#### Variables
+
 La toute **première chose** à apprendre dans n'importe quel langue est *"Comment déclarer une variable ?"*
 
 Voyons un exemple de ce pas : 

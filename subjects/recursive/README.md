@@ -26,7 +26,7 @@ function recursive($arg1, $arg2, ...)
 Créez une fonction `factorial` qui calcule la factorielle du nombre passé en argument.
 
 `factorial` avec les paramètres disponibles suivants :
-- Le numéro : `int`
+- Le nombre : `int`
 
 ### Notions
 

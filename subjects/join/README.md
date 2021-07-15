@@ -2,14 +2,13 @@
 
 ### Instructions
 
-
 Créez une fonction `joinWords` qui prend un tableau de mots comme premier argument et un séparateur comme deuxième argument.
 
 Cette fonction pourra joindre des valeurs de tableaux avec un séparateur donné.
 
 Le deuxième paramètre sera par défaut égal à un espace s'il n'est pas renseigné.
 
-Exemple : 
+Exemples : 
 ```php
 joinWords(['My', 'name', 'is', 'John']); // My name is John
 

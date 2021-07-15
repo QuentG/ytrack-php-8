@@ -1,11 +1,15 @@
 ### Lift v1
 
+### Informations 🙋‍♂️
+
+**Gardez bien ce code, vous en aurez besoin pour un autre exercise**
+
 ### Instructions
 
 On considère un ascenseur avec le fonctionnement suivant :
-- L'ascenseur va en priorité à l'étage demandé
-- S'il est appelé, l'ascenseur va en direction de l'étage appelé le plus proche
-- L'ascenseur s'arrête aux étages demandés ou appelés
+- L'ascenseur va en priorité à l'étage demandé.
+- S'il est appelé, l'ascenseur va en direction de l'étage appelé le plus proche.
+- L'ascenseur s'arrête aux étages demandés ou appelés.
 
 Créez une fonction appelée `getFloor` qui s'occupera de récupérer l'étage auquel l'ascenseur doit aller.
 

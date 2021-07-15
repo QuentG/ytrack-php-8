@@ -19,6 +19,13 @@ Depuis _php 5.2_ vous pouvez spécifier le type de retour de la fonction en mett
 
 Les instructions à exécuter lors de l'appel de cette fonction seront placées entre deux accolades.
 
+### Indications 😉
+
+***Pour tous les exercises nécessitant la création de fonction, veuillez bien préciser le type de retour de la fonction avec les***
+`: leTypedeRetour`
+
+***Si plusieurs types de retour alors :*** `: lePremierTypedeRetour|LeSecond|...`
+
 ### Instructions
 
 Créez une fonction `sayHello` qui dit "Bonjour".
@@ -26,7 +33,7 @@ Créez une fonction `sayHello` qui dit "Bonjour".
 Créez une fonction `sayHelloTo` qui dit "Hello $name".
 
 `sayHelloTo` avec les paramètres disponibles suivants :
-- Le nom : `chaîne`
+- Le nom : `string`
 
 ### Notions
 

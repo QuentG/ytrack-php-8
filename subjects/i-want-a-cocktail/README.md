@@ -54,13 +54,13 @@ $voiture1 = new Voiture(); // Instanciation d'une nouvelle voiture
 var_dump($voiture1);
 
 -> object(Voiture)#1 (3) {
-  ["niveauCarburant"] => int(50)
+  ["niveauCarburant"] => int(45.4)
   ["nombrePortes"] => int(3)
   ["nombreRoues"] => int(4)
 }
 
 // Récupération d'un attribut
-$voiture1->niveauCarburant // 50
+$voiture1->niveauCarburant; // 45.4
 ```
 
 ### Instructions
@@ -80,5 +80,7 @@ Cette classe devra avoir les attributs (+ valeurs de base) suivants :
     - Valeur : 8
 
 ### Notions
-
-- Programmation orientée objet (POO)
+``
+- [Object-Oriented programming (OOP)](https://www.php.net/manual/en/language.oop5.basic.php)
+- [Properties](https://www.php.net/manual/en/language.oop5.properties.php)
+- [Constructor](https://www.php.net/manual/en/language.oop5.decon.php)
