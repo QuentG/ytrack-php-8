@@ -66,7 +66,7 @@ Créer une interface nommée `PoolTempsInterface` qui définira les fonctions su
 - setHeater(bool) : Allume ou éteint le chauffage de la piscine en fonction du booléen.
 
 Créer ensuite une classe nommée `PoolTemps` qui implémentera la `PoolTempsInterface`. 
-Implémenter les différentes fonctions puis créer une fonction `activateHeater` qui permettre de déclencher le chauffage si toutes les conditions sont réunies :
+Implémenter les différentes fonctions puis créer une fonction `activateHeater` qui permettra de déclencher le chauffage si toutes les conditions sont réunies :
 
 - La température moyenne des 7 derniers jours est supérieure à 20°
 - La température actuelle est supérieure à 25°

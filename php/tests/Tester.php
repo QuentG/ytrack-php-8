@@ -7,6 +7,8 @@ class Tester
     private const STUDENT_SOLUTION_BASE_PATH = "/jail/student/";
     private const SOLUTION_BASE_PATH = "../app/";
 
+    private const PROHIBITED_EXERCISE_NAMES = ['test', 'utils'];
+
     private ?string $exerciseName = null;
 
     public function run(): void
@@ -41,7 +43,7 @@ class Tester
         }
 
         $exerciseName = strtolower(trim($exerciseName));
-        if ('test' === $exerciseName) {
+        if (in_array($exerciseName, self::PROHIBITED_EXERCISE_NAMES, true)) {
             $this->fatal("Can't execute test for this filename.");
         }
 

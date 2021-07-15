@@ -15,13 +15,12 @@ TABLE DE DEBUG
 13      |   Moteur
 ```
 
-Créer une fonction nommée `checkCircuits`.
+Créer une fonction nommée `checkCircuits`, prenant en paramètre un `int` et retournant un `array` comme ci-dessous.
 
 Exemples :
 
-9 : divisible par 3 uniquement, la fonction doit retourner un array avec 1 élément : Bras droit
-
-12 : divisible par 2 et 3, la fonction doit retourner un array avec 2 éléments : Bras gauche et Bras droit.
+- 9 : divisible par 3 uniquement, la fonction doit retourner un array avec 1 élément : Bras droit
+- 12 : divisible par 2 et 3, la fonction doit retourner un array avec 2 éléments : Bras gauche et Bras droit.
 
 ### Notions
 

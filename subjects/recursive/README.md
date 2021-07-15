@@ -30,5 +30,5 @@ Créez une fonction `factorial` qui calcule la factorielle du nombre passé en a
 
 ### Notions
 
-- Recursive function
+- [Recursive function](https://thisinterestsme.com/php-recursion-example/)
 - [en.wikipedia.org/wiki/Factorial](https://en.wikipedia.org/wiki/Factorial)

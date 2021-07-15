@@ -35,7 +35,7 @@ function countLinesInFile(string $fileName): int
 
     $content = array_filter(
         preg_replace('~[\r\n]+~', "", $content), // Replace white space by empty string
-        static fn ($val) => "<?php" !== $val && "" !== $val // Delete <?php and empty string in array
+        static fn ($val) => "<?php" !== $val && "?>" !== $val && "" !== $val // Delete unexpected fragments in array
     );
 
     return count($content);

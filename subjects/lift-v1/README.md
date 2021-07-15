@@ -1,9 +1,5 @@
 ### Lift v1
 
-### Informations 🙋‍♂️
-
-**Gardez bien ce code, vous en aurez besoin pour un autre exercise**
-
 ### Instructions
 
 On considère un ascenseur avec le fonctionnement suivant :

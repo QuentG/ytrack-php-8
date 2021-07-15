@@ -23,7 +23,7 @@ echo "My name is : $name"; // Affiche My name is : toto
 
 Le script doit faire **exactement 3 lignes**.
 
-_Ps : Les lignes blanches + la ligne "<?php" ne sont pas prises en comptent._
+_Ps : Les lignes blanches + la ligne "<?php" ne sont pas prises en compte._
 
 ### Notions
 

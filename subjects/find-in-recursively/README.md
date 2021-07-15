@@ -36,5 +36,5 @@ findIn('yeah', $tab) // false
 
 ### Notions
 
-- Recursive function
-- Associative Array
+- [Recursive function](https://thisinterestsme.com/php-recursion-example/)
+- [Associative Arrays](https://www.w3schools.com/php/php_arrays_associative.asp)
