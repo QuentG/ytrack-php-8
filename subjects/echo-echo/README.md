@@ -2,7 +2,7 @@
 
 ### Explications
 
-Pour afficher une chaine de caractères en PHP, nous passons par la fonction `echo`
+Pour afficher une chaine de caractères en PHP, nous passons par la fonction `echo`.
 
 Exemples : 
 ```php

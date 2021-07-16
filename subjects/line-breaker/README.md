@@ -18,9 +18,9 @@ Il doit retourner une chaîne de caractères incluant des sauts de ligne : "\n" 
 
 Exemple : 
 ```php
-breakLines('Line with words', 15) // Line with words
+breakLines('Line with words', 15); // Line with words
 
-breakLines("Line with words should break", 15) // Line with words\nshould break
+breakLines("Line with words should break", 15); // Line with words\nshould break
 
-breakLines("Line with words should break at this spot", 15) // Line with words\nshould break at\nthis spot
+breakLines("Line with words should break at this spot", 15); // Line with words\nshould break at\nthis spot
 ```

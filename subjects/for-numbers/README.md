@@ -7,7 +7,7 @@ La boucle for en PHP ne fonctionne pas comme la boucle while ou do... while, dan
 ```php
 <?php
 
-for(initialization; condition; increment/decrement) {
+for(initialisation; condition; increment/decrement) {
     /* 
         Exécuter ce code jusqu'à ce que le
         la condition soit vraie
