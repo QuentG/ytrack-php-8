@@ -21,7 +21,7 @@ echo "My name is : $name"; // Affiche My name is : toto
 - Afficher à l'aide d'un echo la phrase : "This is my first echo !" avec un espace à la fin de la ligne.
 - Afficher à l'aide d'un echo la phrase : "My variable : (contenu de la variable myVariable)".
 
-Le script doit faire **exactement 3 lignes**.
+**Le script doit faire exactement 3 lignes**.
 
 _Ps : Les lignes blanches + la ligne "<?php" ne sont pas prises en compte._
 

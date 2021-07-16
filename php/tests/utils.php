@@ -17,14 +17,33 @@ function getFunctionContent(ReflectionFunction $function): string
     );
 }
 
-function executeFile(string $fileName): array
+function executeFile(string $fileName, $returnArray = true): string|array
 {
+    if (!$returnArray) {
+        $result = exec("php " . STUDENT_SOLUTION_BASE_PATH . $fileName . PHP_EXTENSION);
+        return !$result ? "" : $result;
+    }
+
     $result = [];
     exec("php " . STUDENT_SOLUTION_BASE_PATH . $fileName . PHP_EXTENSION, $result);
 
     return $result;
 }
 
+function getFileContent(string $fileName): string
+{
+    $content = file_get_contents(STUDENT_SOLUTION_BASE_PATH . $fileName . PHP_EXTENSION);
+    if (!$content) {
+        return "";
+    }
+
+    // Remove comment in content, to prevent if student write unauthorized function/loop/other name in comment
+    return preg_replace(
+        '@(/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/)|((?<!:)//.*)|[\t\r\n]@i',
+        '',
+        $content
+    );
+}
 
 function countLinesInFile(string $fileName): int
 {

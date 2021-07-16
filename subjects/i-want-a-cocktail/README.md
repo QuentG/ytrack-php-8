@@ -6,7 +6,9 @@ La `POO` ⚡ (programmation orientée objet) est une forme particulière de prog
 
 Une classe va regrouper un ensemble de fonctions et de propriétés pouvant agir sur l'objet. Si on prend par exemple une voiture dans le monde réel, on peut modéliser une voiture par une classe `Voiture` qui aura comme propriétés le nombre de roues, le nombre de portes, etc ...
 
-#### Les classes : 
+---
+
+#### Les classes
 
 Une classe regroupe des fonctions et des variables (appelées cette fois `attributs`, car il s'agit des attributs d'une classe) qui interragissent avec l'objet. C'est à dire que pour un objet `voiture` par exemple, vous aurez une classe nommée `Voiture` et vous pourrez avoir une fonction qui modifie le niveau de carburant (le niveau de carburant étant un attribut de la classe que l'on ne peut modifier que via une fonction (appelée `méthode`) qui ira modifier cet attribut). 
 
@@ -40,9 +42,11 @@ Voyons de suite un exemple pour illustrer cela :
 
 Okkkk bon maintenant que l'on a notre objet... comment on fait pour s'en servir ? 🤔
 
+---
+
 #### Créer un objet (instanciation d'une classe)
 
-Voici comment on crée un objet Voiture en PHP :
+Voici comment on crée un objet en PHP :
 
 - Instanciation grâce au mot clé new suivi du nom de l'objet.
 
@@ -51,7 +55,7 @@ Voici comment on crée un objet Voiture en PHP :
 
 $voiture1 = new Voiture(); // Instanciation d'une nouvelle voiture
 
-var_dump($voiture1);
+var_dump($voiture1); // Affichage de tout l'objet
 
 -> object(Voiture)#1 (3) {
   ["niveauCarburant"] => int(45.4)
@@ -80,7 +84,7 @@ Cette classe devra avoir les attributs (+ valeurs de base) suivants :
     - Valeur : 8
 
 ### Notions
-``
+
 - [Object-Oriented programming (OOP)](https://www.php.net/manual/en/language.oop5.basic.php)
 - [Properties](https://www.php.net/manual/en/language.oop5.properties.php)
 - [Constructor](https://www.php.net/manual/en/language.oop5.decon.php)
