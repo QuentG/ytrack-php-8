@@ -24,7 +24,7 @@ Les instructions à exécuter lors de l'appel de cette fonction seront placées 
 ***Pour tous les exercises nécessitant la création de fonction, veuillez bien préciser le type de retour de la fonction avec les***
 `: leTypedeRetour`
 
-***Si plusieurs types de retour alors :*** `: lePremierTypedeRetour|LeSecond|...`
+***Si plusieurs types de retour possible alors :*** `: lePremierTypedeRetour|LeSecond|...`
 
 ### Instructions
 

@@ -7,7 +7,7 @@ class Tester
     private const STUDENT_SOLUTION_BASE_PATH = "/jail/student/";
     private const SOLUTION_BASE_PATH = "../app/";
 
-    private const PROHIBITED_EXERCISE_NAMES = ['test', 'utils'];
+    private const PROHIBITED_EXERCISE_NAMES = ['test', 'utils', 'Tester'];
 
     private ?string $exerciseName = null;
 

@@ -3,5 +3,3 @@
 ### Explications
 
 ### Instructions
-
-### Notions

@@ -24,8 +24,11 @@ Voyons de suite un exemple pour illustrer cela :
       /** Déclaration des attributs */
       public float $niveauCarburant;
       public int $nombrePortes;
+      
+      //  ↙ Visibilité (on y reviendra plus tard)   
       public int $nombreRoues;
-
+      //      ↖ Type   ↖ Nom de la variable
+      
       /**
       * Cette méthode un peu spéciale est le constructeur, 
       * elle est exécutée lorsque vous "créez" votre objet. 
@@ -33,7 +36,9 @@ Voyons de suite un exemple pour illustrer cela :
       */
       public function __construct()
       {
-           $this->niveauCarburant = 45.4;
+           // ↙ $this signifie le contexte actuel
+           $this->niveauCarburant = 45.4; // <- la valeur par défaut
+           //         ↖ Attribut
            $this->nombrePortes = 3;
            $this->nombreRoues = 4;
       }
