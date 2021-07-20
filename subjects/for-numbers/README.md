@@ -4,6 +4,12 @@
 
 La boucle for en PHP ne fonctionne pas comme la boucle while ou do... while, dans le cas d'une boucle for, nous devons déclarer à l'avance combien de fois nous voulons que la boucle s'exécute.
 
+![img.png](img.png)
+
+--- 
+
+Syntaxe :
+
 ```php
 <?php
 

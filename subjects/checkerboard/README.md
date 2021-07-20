@@ -5,7 +5,7 @@
 Créez une fonction `createCheckerboard` qui créera un damier selon une taille passée en paramètre.
 
 - "0" égal à la case blanche
-- "X" égal au boîtier noir
+- "X" égal à la case noir
 
 `createCheckerboard` avec le paramètre suivant :
 - La taille du plateau : `int`

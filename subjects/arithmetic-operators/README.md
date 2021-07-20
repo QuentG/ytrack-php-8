@@ -17,8 +17,8 @@ Il existe cinq opérateurs arithmétiques de **base** :
 Créez les variables suivantes avec les opérateurs et les nombres suivants :
 
 ```php
-$firstNbr = 100 ;
-$secondNbr = 35 ;
+$firstNbr = 100;
+$secondNbr = 35;
 ```
 
 - `firstSum` La somme de deux nombres

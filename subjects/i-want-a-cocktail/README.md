@@ -72,15 +72,57 @@ var_dump($voiture1); // Affichage de tout l'objet
 $voiture1->niveauCarburant; // 45.4
 ```
 
+La variable **$voiture1** représente l'objet qui est ici une voiture. Lorsque vous exécutez ce code, la méthode __construct() de la classe est exécutée. 
+
+Comme il s'agit d'une fonction, elle peut prendre elle aussi des paramètres 🤩. Tout dépend comment vous souhaitez coder votre classe, mais vous pourriez très bien avoir une fonction __construct() qui initialise les attributs en fonction des paramètres que vous lui fournissez.
+
+Voici ce que ça pourrait donner :
+
+```php
+<?php
+
+  class Voiture 
+  {
+      public float $niveauCarburant;
+      public int $nombrePortes;
+      public int $nombreRoues;
+      
+      public function __construct(float $niveauCarburant, int $nombrePortes, int $nombreRoues = 4) 
+      { 
+         $this->niveauCarburant = $niveauCarburant; 
+         $this->nombrePortes = $nombrePortes; 
+         $this->nombreRoues = $nombreRoues; 
+      } 
+  }
+```
+
+Lorsque vous créerez l'objet voiture, vous allez pouvoir sans passer par les méthodes appropriées lui fixer un niveau de carburant, un nombre de portes et un nombre de roues (par défaut 4).
+
+Voici deux façons de créer l'objet :
+
+```php
+<?php 
+
+  $voiture1 = new Voiture(50, 3); // 50 : niveau de carburant et 3 portes, on a pas besoin de spécifier le nombre de roues car il est de 4 par défaut.
+  
+  $voiture2 = new Voiture(10, 5, 6); // 10 : niveau de carburant, 5 portes et 6 roues.
+```
+
+Il est important de signifier que les objets **$voiture1** et **$voiture2** sont deux objets différents qui peuvent avoir leurs propriétés propres.
+
+Vous commencez peut-être maintenant à comprendre avec quelle simplicité vous allez pouvoir créer autant d'objets que vous le souhaitez 😎.
+
+_POO life_ 💯
+
 ### Instructions
 
 Créer une classe nommée `Mojito`.
 
 Cette classe devra avoir les attributs (+ valeurs de base) suivants : 
 
-- `alcoholRate` : Le taux d'alcool dans le sang 
-  - Type : float
-  - Valeur : 0.15
+- `alcoholRate` : Le taux d'alcool dans le sang
+    - Type : float
+    - Valeur : 0.15
 - `ingredients` : Les ingrédients qui constitue le Mojito
     - Type : array
     - Valeur : rhum, citron vert, eau gazeuse, menthe, sucre
