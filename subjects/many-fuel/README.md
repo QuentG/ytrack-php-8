@@ -48,7 +48,7 @@ En règle générale, on n'accède pas directement aux attributs d'un objet. Pou
 
 Ces méthodes s'appellent des accesseurs (getter) pour lire leurs valeurs et des mutateurs (setter) pour modifier leurs valeurs.
 
-Une des conventions souvent utilisée et de reprendre le nom de l'attribut pour créer les méthodes, en ajoutant `get` pour les accesseurs et `set` pour les mutateurs
+Une des conventions souvent utilisée est de reprendre le nom de l'attribut pour créer les méthodes, en ajoutant `get` pour les accesseurs et `set` pour les mutateurs
 
 Exemple : 
 
@@ -116,7 +116,7 @@ $voiture->getNiveauCarburant(); // 45.4
 $voiture->getNombrePortes(); // 3
 $voiture->getNombreRoues(); // 4
 
-$voiture->setNiveauCarburant(100) // Changement du nombre de portes + 
+$voiture->setNiveauCarburant(100) // Changement du niveau de carburant + nombre de portes 
     ->setNombrePortes(2);
     
 $voiture->getNiveauCarburant(); // 100

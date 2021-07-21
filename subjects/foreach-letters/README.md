@@ -2,7 +2,7 @@
 
 ### Explications
 
-La structure de langage `foreach` fournit une façon simple de parcourir des tableaux. 
+La boucle `foreach` fournit une façon simple de parcourir des tableaux. 
 
 foreach ne fonctionne que pour les tableaux et les objets, et émettra une erreur si vous tentez de l'utiliser sur une variable de type différent ou une variable non initialisée. 
 
@@ -10,11 +10,11 @@ Il existe deux syntaxes :
 
 ```php
 foreach (iterable_expression as $value) {
-    //commandes
+    // Code...
 }
 
 foreach (iterable_expression as $key => $value) {
-//commandes
+    // Code...
 }
 ```
 
