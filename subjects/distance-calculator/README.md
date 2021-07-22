@@ -4,7 +4,6 @@
 
 Pour définir une méthode statique, vous placez le mot-clé static devant le mot-clé function comme suit :
 
-
 ```php
 <?php
 
