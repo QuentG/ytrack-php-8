@@ -25,4 +25,4 @@ $thirdTab = ['thirdTab'];
 
 $mergedTab = merge($firstTab, $secondTab, $thirdTab);
 
-$tests[] = static fn ($eq): bool => $eq(['firstTab', 'secondTab', 'secondTabb', 'thirdTab']);
+$tests[] = static fn ($eq): bool => $eq($mergedTab, ['firstTab', 'secondTab', 'secondTabb', 'thirdTab']);

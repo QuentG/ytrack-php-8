@@ -16,13 +16,13 @@ class Tester
         $this->retrieveExerciseName();
         $this->checkFiles();
 
+        ob_start();
+
         require_once "utils.php";
         require_once self::STUDENT_SOLUTION_BASE_PATH . $this->exerciseName  . '.php'; // Student Solution
         require_once self::SOLUTION_BASE_PATH . $this->exerciseName  . '_test.php'; // Solution
 
         $eq = fn ($a, $b): bool => $a === $b;
-
-        ob_start();
 
         foreach ($tests as $i => $t) {
             try {
@@ -34,7 +34,7 @@ class Tester
             }
         }
 
-        ob_clean();
+        ob_get_clean();
 
         echo "Exercise " . $this->exerciseName . ' passed (' . count($tests) . ' tests)';
     }
