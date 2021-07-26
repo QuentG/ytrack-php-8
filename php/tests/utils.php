@@ -17,7 +17,7 @@ function getFunctionContent(ReflectionFunction $function): string
     );
 }
 
-function executeFile(string $fileName, $returnArray = true)
+function executeFile(string $fileName, bool $returnArray = true): string|array
 {
     if (!$returnArray) {
         $result = exec("php " . STUDENT_SOLUTION_BASE_PATH . $fileName . PHP_EXTENSION);

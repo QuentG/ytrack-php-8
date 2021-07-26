@@ -22,6 +22,8 @@ class Tester
 
         $eq = fn ($a, $b): bool => $a === $b;
 
+        ob_start();
+
         foreach ($tests as $i => $t) {
             try {
                 if (!$t($eq, $this->exerciseName)) {
@@ -31,6 +33,8 @@ class Tester
                 $this->fatal("Test #" . $i + 1 . " failed \n \n Error: " . $e->getMessage());
             }
         }
+
+        ob_clean();
 
         echo "Exercise " . $this->exerciseName . ' passed (' . count($tests) . ' tests)';
     }
