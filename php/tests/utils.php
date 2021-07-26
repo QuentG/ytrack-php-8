@@ -25,7 +25,7 @@ function executeFile(string $fileName, $returnArray = true)
     }
 
     $result = [];
-    exec("php " . $fileName . PHP_EXTENSION, $result);
+    exec("php " . STUDENT_SOLUTION_BASE_PATH . $fileName . PHP_EXTENSION, $result);
 
     return $result;
 }

@@ -7,7 +7,7 @@ $content = getFunctionContent($reflection);
 
 $tests[] = static fn ($eq): bool => $eq($reflection->getNumberOfParameters(), 1);
 $tests[] = static fn ($eq): bool => $reflection->hasReturnType();
-$tests[] = static fn ($eq): bool => str_contains($content, 'factorial('); // Check recursively
+$tests[] = static fn ($eq): bool => str_contains($content, 'factorial'); // Check recursively
 
 $tests[] = static fn ($eq): bool => $eq(factorial(1), 1);
 $tests[] = static fn ($eq): bool => $eq(factorial(2), 2);

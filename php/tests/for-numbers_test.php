@@ -5,7 +5,7 @@ $tests = [];
 $fileContent = getFileContent('for-numbers');
 
 $tests[] = static fn ($eq, $exerciseName): bool => count(executeFile($exerciseName)) > 0;
-$tests[] = static fn ($eq, $exerciseName): bool => countLinesInFile($exerciseName) <= 10;
+$tests[] = static fn ($eq, $exerciseName): bool => countLinesInFile($exerciseName) <= 12;
 
 $tests[] = static fn ($eq): bool => str_contains($fileContent, 'for(') || str_contains($fileContent, 'for ('); // Use for loop
 $tests[] = static fn ($eq): bool => !str_contains($fileContent, 'range('); // Unauthorized function

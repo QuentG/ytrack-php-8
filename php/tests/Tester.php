@@ -39,7 +39,7 @@ class Tester
     {
         $exerciseName = getopt('t:', ['required:'])['t'] ?? null;
         if (null === $exerciseName) {
-            $this->fatal("Missing exercise, usage: \n php test.php -texercise-name");
+            $this->fatal("Missing exercise, usage: \nphp test.php -texercise-name");
         }
 
         $exerciseName = strtolower(trim($exerciseName));
@@ -63,7 +63,7 @@ class Tester
         // Prevents smart kids from skipping the exercise ;)
         $studentSolutionContent = file_get_contents(self::STUDENT_SOLUTION_BASE_PATH . $this->exerciseName  . '.php');
         if (str_contains($studentSolutionContent, 'exit') || str_contains($studentSolutionContent, 'exit(')) {
-            $this->fatal("It's forbidden to use the exit function ! \n It's not good to want to cheat... :(");
+            $this->fatal("It's forbidden to use the exit function ! \nIt's not good to want to cheat... :(");
         }
     }
 
