@@ -20,7 +20,7 @@ function getFunctionContent(ReflectionFunction $function): string
 function executeFile(string $fileName, $returnArray = true)
 {
     if (!$returnArray) {
-        $result = exec("php " . $fileName . PHP_EXTENSION);
+        $result = exec("php " . STUDENT_SOLUTION_BASE_PATH . $fileName . PHP_EXTENSION);
         return !$result ? "" : $result;
     }
 
