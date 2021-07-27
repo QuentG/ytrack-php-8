@@ -32,6 +32,10 @@ Vous pouvez améliorer le processus de prise de décision en proposant un choix 
 
 L'instruction if...else vous permet d'exécuter un bloc de code si la condition spécifiée est évaluée à true et un autre bloc de code si elle est évaluée à false. Il peut s'écrire, comme ceci :
 
+![img.png](img.png)
+
+#### Syntaxe : 
+
 ```php
 <?php
  if (condition) {
@@ -46,6 +50,10 @@ L'instruction if...else vous permet d'exécuter un bloc de code si la condition 
 #### L'instruction if...elseif...else 
 
 C'est une instruction spéciale utilisée pour combiner plusieurs instructions if...else.
+
+![img_1.png](img_1.png)
+
+#### Syntaxe : 
 
 ```php
 <?php
@@ -71,7 +79,7 @@ A l'aide de l'instruction `if elseif else`, écrire un script qui va afficher un
 - Si l'heure est entre 12h et 18h inclus affichez : Passe une bonne après midi !
 
 
-- Si l'heure est entre 18h et 21h inclus affichez : Passe une bonne après midi !
+- Si l'heure est entre 18h et 21h inclus affichez : Bonsoir ! J'espère que tu as passé une bonne journée !
 
 
 - Sinon affichez : Bonne nuit ! A demain :) 

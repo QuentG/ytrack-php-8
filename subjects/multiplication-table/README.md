@@ -25,6 +25,8 @@ Dans le PHP, les éléments suivants créent des boucles :
 
 La boucle while exécute un bloc de code tant qu'une condition est vraie.
 
+![img.png](img.png)
+
 Syntaxe :
 
 ```php

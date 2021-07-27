@@ -1,5 +1,7 @@
 ### String manipulator
 
+Recreate most usable basic string functions.
+
 ### Instructions
 
 - Créer une fonction `capsMe(string)` qui va mettre toute la chaine de caractère passé en paramètre en majuscule.

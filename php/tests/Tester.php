@@ -16,7 +16,7 @@ class Tester
         $this->retrieveExerciseName();
         $this->checkFiles();
 
-        ob_start();
+        ob_start(); // Turn on output buffering
 
         require_once "utils.php";
         require_once self::STUDENT_SOLUTION_BASE_PATH . $this->exerciseName  . '.php'; // Student Solution
@@ -34,7 +34,7 @@ class Tester
             }
         }
 
-        ob_get_clean();
+        ob_get_clean(); // Clean the current buffer because we just want the next echo displayed
 
         echo "Exercise " . $this->exerciseName . ' passed (' . count($tests) . ' tests)';
     }

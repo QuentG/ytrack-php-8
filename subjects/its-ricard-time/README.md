@@ -8,6 +8,8 @@ Elle permet de tester la condition après la première itération et exécution 
 
 Dans le cas de la boucle while, la condition est examinée avant la boucle tandis que pour la boucle do-while elle est examinée à la fin. Ainsi, même si cette condition n'est pas vérifiée, la boucle s'exécutera au moins une fois.
 
+![img.png](img.png)
+
 #### Syntaxe :
 
 ```php
@@ -75,7 +77,7 @@ A l'aide de l'instruction `do{ ... } while()`, écrire un script qui va incréme
 - Au 5ème ricard affichez : Je suis plus très frais...
 - Au 7ème ricard stopper la boucle.
 
-**Attention ! Ne pas oublier de sauter une ligne après chaque echo**
+**Attention ! Ne pas oublier de sauter une ligne a la fin chaque echo**
 
 ### Notions
 

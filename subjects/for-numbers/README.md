@@ -57,7 +57,7 @@ Résultat attendu :
 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
 ```
 
-**Le script doit faire maximum 10 lignes**
+**Le script doit faire maximum 12 lignes**
 
 Vous n'êtes pas autorisé à utiliser la fonction 'range'.
 
