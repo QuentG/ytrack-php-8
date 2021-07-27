@@ -19,6 +19,8 @@ Recreate most usable basic array functions.
 - Créer une fonction `merge(array, ...array, ...array, ...)` qui va fusionner plusieurs tableaux en un seul.
 
 
+__Astuce__ : Spread operator
+
 ### Notions
 
 - [php.net/manual/fr/language.types.array.php](https://www.php.net/manual/fr/language.types.array.php)
