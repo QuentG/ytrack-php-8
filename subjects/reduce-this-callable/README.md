@@ -70,7 +70,7 @@ Hello World?
 
 ### Instructions
 
-Recréer la fonction native `array_reduce` qui vous nommerez `myArrayReduce`.
+Recréer la fonction native `array_reduce` que vous nommerez `myArrayReduce`.
 
 Bien évidemment vous n'êtes pas autorisé à utiliser `array_reduce`.
 
