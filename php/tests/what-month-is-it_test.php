@@ -27,4 +27,4 @@ const LETTERS_MONTH = [
 
 $month = LETTERS_MONTH[date("m")];
 
-$tests[] = static fn ($eq, $exerciseName): bool => $eq(executeFile($exerciseName), "Nous sommes au mois de $month");
+$tests[] = static fn ($eq, $exerciseName): bool => $eq(executeFile($exerciseName, false), "Nous sommes au mois de $month");

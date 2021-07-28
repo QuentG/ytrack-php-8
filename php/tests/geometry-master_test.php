@@ -23,9 +23,9 @@ $reflectionSquare = new ReflectionClass('Square');
 
 $tests[] = static fn ($eq): bool => !$eq($reflectionSquare->getConstructor(), NULL);
 $tests[] = static fn ($eq): bool => $eq(get_parent_class('Square'), 'AbstractGeometry');
-$tests[] = static fn ($eq): bool => $eq(count($reflectionSquare->getProperties()), 2);
+$tests[] = static fn ($eq): bool => $eq(count($reflectionSquare->getProperties()), 1);
 
-$square = new Square(9, 9);
+$square = new Square(9);
 
 $tests[] = static fn ($eq): bool => $eq($square->area(), 81);
 $tests[] = static fn ($eq): bool => $eq($square->perimeter(), 36);

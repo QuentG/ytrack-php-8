@@ -93,7 +93,7 @@ Créons deux classes enfants héritant de la classe Vehicle et qui auront une d�
 class Voiture extends Vehicule {
     public function kilometrage() {
         echo "Je suis une " . $this->name . PHP_EOL;
-        echo "Mon kilometrage moyen est entre 15 et 22 L/km";
+        echo "Mon kilométrage moyen est entre 15 et 22 L/km";
     } 
 }
 
@@ -101,7 +101,7 @@ class Voiture extends Vehicule {
 class Moto extends Vehicule {
     public function kilometrage() {
         echo "Je suis un " . $this->name . PHP_EOL;
-        echo "Mon kilometrage moyen est 35 et 47 L/km";
+        echo "Mon kilométrage moyen est 35 et 47 L/km";
     }
 }
 ```
@@ -115,8 +115,8 @@ Comme mentionné ci-dessus, une classe abstraite ne peut avoir aucun objet, une 
  $car->setName("Twingo");
  $car->kilometrage();
  
- // Je suis une Twigo
- // Mon kilometrage moyen est entre 15 et 22 L/km
+ // Je suis une Twingo
+ // Mon kilométrage moyen est entre 15 et 22 L/km
 ```
 
 **Attention ! Si vous essayez de créer un objet de la classe Vehicule, vous obtiendrez une erreur.**
@@ -130,7 +130,7 @@ Créer une classe abstraite nommée `AbstractGeometry` qui aura les méthodes ab
 
 Créer ensuite une classe `Rectangle`, `Square` et `Triangle`.
 
-Chacune de ses classes (Rectangle, Square) doit avoir un contructeur qui prend en paramètre la largeur et la hauteur.
+Chacune de ses classes (Rectangle, Square) doit avoir un contructeur qui prend en paramètre la largeur (et la hauteur pour le rectangle).
 
 La classe Triangle doit avoir un constructeur qui prend trois paramètres.
 
