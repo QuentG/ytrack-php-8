@@ -36,7 +36,7 @@ do {
 } while($i <= 10);
 ```
 
-> Remarques: Il existe deux instructions qui permettent de modifier l'exécution des boucles, il s'agit de `break` et de `continue`.
+> Remarque : Il existe deux instructions qui permettent de modifier l'exécution des boucles, il s'agit de `break` et de `continue`.
 
 ---
 
@@ -77,7 +77,7 @@ A l'aide de l'instruction `do{ ... } while()`, écrire un script qui va incréme
 - Au 5ème ricard affichez : Je suis plus très frais...
 - Au 7ème ricard stoppez la boucle.
 
-**Attention ! Ne pas oublier de sauter une ligne a la fin chaque echo**
+**Attention ! Ne pas oublier de sauter une ligne a la fin chaque echo.**
 
 ### Notions
 
