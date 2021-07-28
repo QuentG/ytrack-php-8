@@ -19,7 +19,7 @@ Recreate most usable basic array functions.
 - Créer une fonction `merge(array, ...array, ...array, ...)` qui va fusionner plusieurs tableaux en un seul.
 
 
-__Astuce__ : Spread operator
+__Astuce__ : Variadic functions / Spread operators 
 
 ### Notions
 

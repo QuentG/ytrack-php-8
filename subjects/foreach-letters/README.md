@@ -22,7 +22,7 @@ foreach (iterable_expression as $key => $value) {
 
 A l'aide d'une instruction foreach écrire un programme affichant l'alphabet.
 
-Astuce : utilisé la fonction `range`.
+__Astuce__ : utilisé la fonction `range`.
 
 Résultat attendu : 
 
