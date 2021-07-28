@@ -6,10 +6,10 @@ $reflectionFloor = new ReflectionFunction('getFloor');
 $reflectionDirection = new ReflectionFunction('getDirection');
 
 $tests[] = static fn ($eq): bool => $eq($reflectionFloor->getNumberOfParameters(), 3);
-$tests[] = static fn ($eq): bool => $eq($reflectionFloor->hasReturnType(), true);
+$tests[] = static fn ($eq): bool => $reflectionFloor->hasReturnType();
 
 $tests[] = static fn ($eq): bool => $eq($reflectionDirection->getNumberOfParameters(), 3);
-$tests[] = static fn ($eq): bool => $eq($reflectionDirection->hasReturnType(), true);
+$tests[] = static fn ($eq): bool => $reflectionDirection->hasReturnType();
 
 $tests[] = static fn ($eq): bool => $eq(getFloor(1, null, []), null);
 $tests[] = static fn ($eq): bool => $eq(getFloor(1, 1, []), 1);

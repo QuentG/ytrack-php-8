@@ -8,11 +8,11 @@ $board = [
     ['m', 'f', 'b', 's']
 ];
 
-$tests[] = static fn ($eq): bool => $eq(searchWord($board, 'abcd'), true);
-$tests[] = static fn ($eq): bool => $eq(searchWord($board, 'abcl'), true);
-$tests[] = static fn ($eq): bool => $eq(searchWord($board, 'admfbl'), true);
-$tests[] = static fn ($eq): bool => $eq(searchWord($board, 'admfkb'), true);
+$tests[] = static fn ($eq): bool => searchWord($board, 'abcd');
+$tests[] = static fn ($eq): bool => searchWord($board, 'abcl');
+$tests[] = static fn ($eq): bool => searchWord($board, 'admfbl');
+$tests[] = static fn ($eq): bool => searchWord($board, 'admfkb');
 
-$tests[] = static fn ($eq): bool => $eq(searchWord($board, 'abcc'), false);
-$tests[] = static fn ($eq): bool => $eq(searchWord($board, 'abcdc'), false);
-$tests[] = static fn ($eq): bool => $eq(searchWord($board, 'dklml'), false);
+$tests[] = static fn ($eq): bool => !searchWord($board, 'abcc');
+$tests[] = static fn ($eq): bool => !searchWord($board, 'abcdc');
+$tests[] = static fn ($eq): bool => !searchWord($board, 'dklml');

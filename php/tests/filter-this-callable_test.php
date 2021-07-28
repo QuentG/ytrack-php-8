@@ -5,8 +5,8 @@ $tests = [];
 $reflection = new ReflectionFunction('myArrayFilter');
 $functionContent = getFunctionContent($reflection);
 
-$tests[] = static fn ($eq): bool => $eq($reflection->getNumberOfParameters(), 3);
-$tests[] = static fn ($eq): bool => $eq($reflection->getNumberOfRequiredParameters(), 2);
+$tests[] = static fn ($eq): bool => $eq($reflection->getNumberOfParameters(), 2);
+$tests[] = static fn ($eq): bool => $eq($reflection->getNumberOfRequiredParameters(), 1);
 $tests[] = static fn ($eq): bool => $eq(str_contains($functionContent, "array_filter"), false);
 
 $tests[] = static fn ($eq): bool => $eq(

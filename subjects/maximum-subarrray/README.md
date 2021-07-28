@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Créer une fonction `findMaximumSubarray(array): int|float` qui va permettre de résoudre le problème "Maximum subarray"
+Créer une fonction `findMaximumSubarray(array): int|float` qui va permettre de résoudre le problème "Maximum subarray".
 
 Vous n'êtes pas autorisé à utiliser la fonction `array_sum`.
 

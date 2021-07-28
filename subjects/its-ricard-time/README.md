@@ -31,7 +31,7 @@ do {
 $i = 0;
 // Boucle générant la table de multiplication du 8
 do {
-  echo "8 x ". $i . " = " . ( 8 * $i) . "\n";
+  echo "8 x ". $i . " = " . ( 8 * $i) . PHP_EOL;
   $i++; // Incrémentation du compteur
 } while($i <= 10);
 ```
@@ -62,7 +62,7 @@ do {
   }
 
   echo $i . "\n";
-  $i++ ;
+  $i++;
 } while($i < 20);
 ```
 
@@ -70,12 +70,12 @@ do {
 
 Créer une variable nommée `$nbrRicard`.
 
-A l'aide de l'instruction `do{ ... } while()`, écrire un script qui va incrémenter le nombre de ricard bu en respectant les conditions suivantes.
+A l'aide de l'instruction `do{ ... } while()`, écrire un script qui va incrémenter le nombre de ricard bu en respectant les conditions suivantes :
 
 - Avant chaque ricard bu affiché : Allez hop ricard numéro + le numéro du ricard actuel
 - Au 3ème ricard affichez : Il va bientôt falloir que j'arrête !
 - Au 5ème ricard affichez : Je suis plus très frais...
-- Au 7ème ricard stopper la boucle.
+- Au 7ème ricard stoppez la boucle.
 
 **Attention ! Ne pas oublier de sauter une ligne a la fin chaque echo**
 

@@ -15,9 +15,9 @@ $tests[] = static fn ($eq): bool => $eq(sum([0, -1]), -1);
 
 $tabContains = ['Ok', 5, 5.4];
 
-$tests[] = static fn ($eq): bool => $eq(arrayContains($tabContains, 5.4), true);
-$tests[] = static fn ($eq): bool => $eq(arrayContains($tabContains, 'Ok'), true);
-$tests[] = static fn ($eq): bool => $eq(arrayContains($tabContains, 'Nothing'), false);
+$tests[] = static fn ($eq): bool => arrayContains($tabContains, 5.4);
+$tests[] = static fn ($eq): bool => arrayContains($tabContains, 'Ok');
+$tests[] = static fn ($eq): bool => !arrayContains($tabContains, 'Nothing');
 
 $firstTab = ['firstTab'];
 $secondTab = ['secondTab', 'secondTabb'];

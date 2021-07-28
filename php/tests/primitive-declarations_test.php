@@ -3,7 +3,7 @@
 $tests = [];
 
 $tests[] = static fn ($eq): bool => $eq(gettype($firstStr), 'string');
-$tests[] = static fn ($eq): bool => $eq(str_contains($firstEscapeStr, "\n"), true);
+$tests[] = static fn ($eq): bool => str_contains($firstEscapeStr, "\n");
 $tests[] = static fn ($eq): bool => $eq(gettype($firstBool), 'boolean');
 $tests[] = static fn ($eq): bool => $eq(gettype($firstInteger), 'integer');
 $tests[] = static fn ($eq): bool => $eq(gettype($firstFloat), 'double');
