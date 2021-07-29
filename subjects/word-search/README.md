@@ -37,7 +37,6 @@ searchWord($board, 'dklml'); // false
 ### Notions
 
 - Multidimensional array
-- [php.net/manual/en/functions.arguments.php](https://www.php.net/manual/en/functions.arguments.php)
 - [php.net/manual/en/language.types.array.php](https://www.php.net/manual/en/language.types.array.php)
 - [php.net/manual/en/function.array-keys.php](https://www.php.net/manual/en/function.array-keys.php)
 - [php.net/manual/en/function.in-array.php](https://www.php.net/manual/en/function.in-array.php)

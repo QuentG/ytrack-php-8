@@ -145,7 +145,11 @@ Maintenant, vous voyez les messages « Bonjour » deux fois.
 
 ### Instructions
 
+Créer une closure `$today` qui va afficher "Nous sommes le (numéro du jour en cours) (mois en cours) (année en cours)" 
 
+Exemple : ```Nous sommes le 29 Juillet 2021```
+
+Créer une closure `$isLeapYear` qui va vérifier si l'année passée en paramètre est bissextiles.
 
 ### Notions
 

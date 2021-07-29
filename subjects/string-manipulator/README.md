@@ -21,4 +21,5 @@ Recreate most usable basic string functions.
 
 ### Notions
 
+- [php.net/manual/en/functions.arguments.php](https://www.php.net/manual/en/functions.arguments.php)
 - [php.net/manual/en/book.strings.php](https://www.php.net/manual/en/book.strings.php)
