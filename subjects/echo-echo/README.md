@@ -29,6 +29,8 @@ echo "Mon second echo" . PHP_EOL;
 echo "Mon dernier echo"
 ```
 
+> `PHP_EOL` est la constante qui contient le caractère de saute de ligne `\n`
+
 ### Instructions
 
 - Créer une variable `myVariable` avec la valeur 12.
