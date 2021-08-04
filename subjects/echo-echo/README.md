@@ -15,6 +15,20 @@ $name = 'toto';
 echo "My name is : $name"; // Affiche My name is : toto
 ```
 
+### Indications 😉
+
+**Pour chaque exercise nécessitant des affichages à la fonction `echo`. N'oubliez de sauter une ligne a la fin chaque echo.**
+
+Exemple : 
+
+```php
+echo "Mon premier echo" . PHP_EOL;
+
+echo "Mon second echo" . PHP_EOL;
+
+echo "Mon dernier echo"
+```
+
 ### Instructions
 
 - Créer une variable `myVariable` avec la valeur 12.
