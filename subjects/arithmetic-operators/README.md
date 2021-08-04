@@ -9,7 +9,7 @@ There are five **basic** arithmetic operators :
 | +        |    Addition    |  $x + $y |              Sum of $x and $y. |
 | -        |  Substraction  |  $x - $y |       Difference of $x and $y. |
 | \*       | Multiplication | $x \* $y |          Product of $x and $y. |
-| /        |    Division    |  $x / $y |         Quotient of$ x and $y. |
+| /        |    Division    |  $x / $y |         Quotient of $x and $y. |
 | %        |     Modulo     |  $x % $y | Remainder of $x divided by $y. |
 
 ### Instructions
