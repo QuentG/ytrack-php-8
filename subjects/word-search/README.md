@@ -2,16 +2,18 @@
 
 ### Instructions
 
-Je veux être maître des mots croisés !!
-Mais pour cela je dois d'abord réussir à trouver des mots dans un tableau... OK C'EST PARTI !
+I want to be a crossword master !!
+But for that I must first succeed in finding words in a table ... OK LET'S GO!
 
-Créez une fonction `searchWord` qui recherchera une chaîne de caractères dans un tableau donné.
+Create a `searchWord` function which will search for a string of characters in a given array.
 
-`searchWord` avec les paramètres disponibles suivants :
-- Le plateau : `array`
-- La chaîne à rechercher : `string`
+`searchWord` with the following available parameters :
 
-Utiliser ce tableau : 
+- The board: `array`
+- The string to search for: `string`
+
+Use this array :
+
 ```php
 $board = [
     ['a', 'b', 'c', 'd'],
@@ -20,15 +22,16 @@ $board = [
 ];
 ```
 
-Exemple :
+Example :
+
 ```php
-// Le mot peut être construit sous forme de lettres de cellules adjacentes séquentiellement
-// où les cellules 'adjacentes' sont celles voisines horizontalement ou verticalement
+// Word can be constructed as letters from adjacent cells sequentially
+// where the 'adjacent' cells are the neighboring ones horizontally or vertically
 searchWord($board, 'abcd'); // true
 searchWord($board, 'abcl'); // true
 searchWord($board, 'admfbl'); // true
 
-// Il n'est pas permis d'utiliser deux fois la même lettre
+// It is not allowed to use the same letter twice
 searchWord($board, 'abcc'); // false
 searchWord($board, 'abcdc'); // false
 searchWord($board, 'dklml'); // false

@@ -2,18 +2,18 @@
 
 ### Instructions
 
-Créer une fonction `f` qui renvoie un tableau associatif contenant 3 éléments. Les éléments (dans cet ordre) sont `'+'`, `'-'` et `'*'`. Les valeurs pour chaque élément sont des références pour des objets qui représentent des fonctions. 
+Create an `f` function that returns an associative array containing 3 elements. The elements (in that order) are `'+'`, `'-'`, and `'*'`. The values ​​for each element are references for objects that represent functions.
 
-- Le premier est capable de prendre deux nombres et de retourner leur somme. 
-- Le second est capable de prendre deux nombres et de restituer leur différence.
-- Le troisième est capable de prendre deux nombres et de retourner leurs multiplications.
+- The first is able to take two numbers and return their sum.
+- The second is able to take two numbers and restore their difference.
+- The third is able to take two numbers and return their multiplications.
 
-**Attention la fonction f ne prend pas de paramètres** !!
+**Be careful, the function f does not take any parameters** !!
 
-__Astuce__ : Une fonction peut retourner une autre fonction. Utiliser des fonctions anonymes, vous verrez c'est cool :D
+**Trick** : A function can return another function. Using anonymous functions, you'll see it's cool :D
 
-__Astuce 2__ (parce qu'on est cool) : Voici 2 manières de déclarer une fonction anonyme 
- 
+**Trick 2** (because we're cool): Here are 2 ways to declare an anonymous function
+
 ```php
 static fn () => ....
 

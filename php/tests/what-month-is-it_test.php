@@ -25,6 +25,6 @@ const LETTERS_MONTH = [
     12 => 'Décembre',
 ];
 
-$month = LETTERS_MONTH[date("m")];
+$month = LETTERS_MONTH[intval(date("m"))];
 
 $tests[] = static fn ($eq, $exerciseName): bool => $eq(executeFile($exerciseName, false), "Nous sommes au mois de $month");

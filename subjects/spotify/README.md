@@ -2,41 +2,43 @@
 
 ### Instructions
 
-Créez une base de données de vos musiques préférées ! Elle devra conserver des informations sur toutes les chansons ajoutées. 
+Create a database of your favorite music! It will have to keep information about all the added songs.
 
-Sur la première ligne, vous obtiendrez le nombre de chansons que vous allez essayer d'ajouter. 
+On the first line, you will get the number of songs you are going to try to add.
 
-Sur les lignes suivantes, vous obtiendrez les chansons à ajouter au format : 
+On the following lines you will get the songs to add in format :
 
-`<nom de l'artiste>;<nom de la chanson>;<minutes:secondes>` 
+`<artist name>; <song name>; <minutes:seconds>`
 
-Pour être valide, chaque chanson doit avoir un nom d'artiste, un nom de chanson et une durée.
+To be valid, each song must have an artist name, song name, and duration.
 
-Pour ce faire vous allez devoir créer les classes suivantes : 
+To do this you will have to create the following classes :
+
+---
+
+- `Song` :
+  - string artist
+  - string title
+  - string duration
+
+A constructor is expected.
+
+Do what is necessary to be able to recover + modify all these properties.
 
 ---
 
-- `Song` : 
-    - string artist
-    - string title
-    - string duration
-
-Un constructeur est attendu.
-
-Faites le nécessaire pour pouvoir récupérer + modifier toutes ces propriétés.    
-
----
 - `Playlist`
-    - array[Song] songs
-    - int totalMedias
+  - array[Song] songs
+  - int totalMedias
 
-Aucun constructeur n'est attendu.
+No manufacturer is expected.
 
-Méthodes attendues : 
- - addMedia(Song) : mettra à jour la liste des sons + le nombre total de sons.
- - __toString(): cette méthode retournera le texte suivant 
+Expected methods:
 
-Si nous ajoutons 3 sons : 
+- addMedia(Song) : will update the list of sounds + the total number of sounds.
+- __toString(): this method will return the following text
+
+If we add 3 sounds :
 
 ```
 Songs added: 3
@@ -45,26 +47,28 @@ Playlist length: 0h 10m 45s
 
 ---
 
-Pour finir vous allez devoir créer une classe nommée `App` qui sera le point central pour faire fonctionner notre nouveau Spotify !
+Finally you will have to create a class named `App` which will be the central point to make our new Spotify work!
 
-Cette classe devra avoir une propriété nommée `content` qui sera de type string. Ceci correspond aux différentes musiques à ajouter à nos playlist.
+This class must have a property named `content` which will be of type string. This corresponds to the different music to add to our playlists.
 
-Exemple du contenu : 
+Example of content:
 
 ```php
 ["ABBA;Mamma Mia;3:35\n", "Nasko Mentata;Shopskata salata;4:123\n", "Nasko Mentata;Shopskata salata;4:12"];
 ```
 
-Faites le nécessaire pour pouvoir récupérer + modifier cette propriété. 
+Do what is necessary to be able to recover + modify this property.
 
-Aucun constructeur n'est attendu.
+No manufacturer is expected.
 
-Cette classe devra avoir les méthodes suivantes : 
-- start() : lance le programme
-- readLine(bool): lis le contenu du tampon de sortie
-- write(string): écrit une nouvelle ligne avec dans le tampon de sortie
+This class should have the following methods :
 
-En utilisant le code suivant : 
+- start() : start the program
+- readLine(bool): read the contents of the output buffer
+- write(string): write a new line with in the output buffer
+
+Using the following code:
+
 ```php
 private function readLine(bool $asArray = false): array|bool|string
 {
@@ -83,14 +87,14 @@ private function readLine(bool $asArray = false): array|bool|string
 }
 ```
 
-Resultat attendu : 
+Expected result :
 
 ```php
 $app = new App();
 $app->setContent(["ABBA;Mamma Mia;3:35\n", "Nasko Mentata;Shopskata salata;4:123\n", "Nasko Mentata;Shopskata salata;4:12"]);
 $app->start();
 
-Sortie : 
+Output :
 Songs added: 3
 Playlist length: 0h 10m 45s
 
@@ -98,7 +102,7 @@ $app2 = new App();
 $app2->setContent(["JUL;Alors la zone;3:25\n", "Naps;La kiffance;2:59\n", "2TH;Si seulement;4:09\n", "Vayn;24H chrono;3:48"]);
 $app2->start();
 
-Sortie :
+Output :
 
 Songs added: 4
 Playlist length: 0h 13m 40s

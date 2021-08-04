@@ -1,30 +1,30 @@
 ### What month is it ?
 
-### Explications 
+### Explanations
 
-L'instruction `switch` équivaut à une série de structures `if`.
+The `switch` statement is equivalent to a series of` if` structures.
 
-Elle de comparer une variable à un grand nombre de valeurs différentes, et d'exécuter différentes parties de code suivant la valeur de cette variable.
+It compares a variable to a large number of different values, and executes different pieces of code depending on the value of that variable.
 
-Il est souvent plus fiable, plus pratique, plus "élégant" d'utiliser une seule structure switch plutôt que plusieurs structures if (En plus le déroulement du programme sera plus rapide).
+It is often more reliable, more practical, more "elegant" to use a single switch structure rather than several if structures (In addition, the program will run faster).
 
-#### Syntaxe : 
+#### Syntax :
 
 ```php
 <?php
 
 $i = 1;
 
-switch ($i) { // Variable à vérifier
-    case 0: // Premier choix
-        echo '$i est égal à 0';
-        break; // Condition respecté donc on sort de la boucle
-    case 1: // Second choix
-        echo '$i est égal à 1'; 
-        break; // Condition respecté donc on sort de la boucle
-    case ($i > 10): // Troisième choix
-        echo '$i est supérieur à 10';
-        break; // Condition respecté donc on sort de la boucle
+switch ($i) { // Variable to check
+    case 0: // First choice
+        echo '$i is equal to 0';
+        break; // Condition respected so we leave the loop
+    case 1: // Second choice
+        echo '$i is equal to 1';
+        break; // Condition respected so we leave the loop
+    case ($i > 10): // Third choice
+        echo '$i is greater than 10';
+        break; // Condition respected so we leave the loop
 
      // .... Infini "case" ....
 }
@@ -32,11 +32,11 @@ switch ($i) { // Variable à vérifier
 
 ### Instructions
 
-Créer une variable nommée `$month` qui récupèrera le mois en cours sous forme de chiffre.
+Create a variable named `$month` which will retrieve the current month as a number.
 
-Exemples : Janvier => 1 / Février => 2 / Novembre = 11;
+Examples: January => 1 / February => 2 / November => 11;
 
-A l'aide de l'instruction `switch`, écrire un script qui va afficher "Nous sommes au mois de " + le mois actuel.
+Using the `switch` statement, write a script that will display "We are in the month of " + the current month.
 
 ### Notions
 

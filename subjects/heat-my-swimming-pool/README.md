@@ -1,77 +1,80 @@
 ### Heat my swimming pool ?
 
-### Explications
+### Explanations
 
-Les interfaces objets sont des contrats que les classes qui les implémentent doivent remplir. Ils contiennent des méthodes vides qui forcent une classe à les utiliser, promouvant ainsi un standard de développement.
+Object interfaces are contracts that the classes that implement them must fulfill. They contain empty methods that force a class to use them, thus promoting a development standard.
 
-Si une classe implémente une interface, elle est obligée d'utiliser toutes les méthodes de la même (et les mêmes types d'arguments des méthodes), sinon elle donnera une erreur fatale. Plusieurs interfaces peuvent être utilisées dans chaque classe, et elles peuvent être étendues entre elles à l'aide d'`extends`. Une interface peut étendre une ou plusieurs interfaces.
+If a class implements an interface, it is forced to use all the methods of the same (and the same types of method arguments), otherwise it will give a fatal error. Several interfaces can be used in each class, and they can be extended between them using `extensions`. An interface can extend one or more interfaces.
 
-Toutes les méthodes déclarées dans une interface doivent être publiques.
+All methods declared in an interface must be public.
 
-Pour définir une interface il faut utiliser le mot clé `interface`. Et pour l'implémenter `implements`
+To define an interface you must use the `interface` keyword. And to implement it `implements`
 
-Exemple : 
+Example :
 
 ```php
-interface Entretien // Création de l'interface
-{ 
-    // Fonction avec param qui ne retourne rien
-    public function peindre(string $couleur): void;
-    // Fonction sans param qui ne retourne rien
-    public function nettoyer(): void;
+// Interface creation
+interface Maintenance
+{
+    // Function with param which returns nothing
+    public function paint(string $couleur): void;
+    // Function without param which returns nothing
+    public function cleaning(): void;
 }
 
-class Voiture implements Entretien 
+class Car implements Maintenance
 {
-    private string $couleur = "Vert";
-    private bool $propre = false;
-    
-    // Obligation d'implémenter les deux fonctions sinon erreur fatale.  
-    public function peindre(string $couleur): void
+    private string $color = "Green";
+    private bool $clean = false;
+
+    // Obligation to implement both functions otherwise fatal error.
+    public function paint(string $color): void
     {
-       $this->couleur = $couleur;   
-    } 
-    
-    public function nettoyer(): void
+       $this->color = $color;
+    }
+
+    public function cleaning(): void
     {
-       $this->propre = true;
+       $this->clean = true;
     }
 }
 
-class Moto implements Entretien 
+class Motorbike implements Maintenance
 {
-    private string $couleur = "Rouge";
-    private bool $propre = false;
-      
-    // Obligation d'implémenter les deux fonctions sinon erreur fatale.  
-    public function peindre(string $couleur): void
+    private string $color = "Red";
+    private bool $clean = false;
+
+    // Obligation to implement both functions otherwise fatal error.
+    public function paint(string $color): void
     {
-       $this->couleur = $couleur;   
-    } 
-    
-    public function nettoyer(): void
+       $this->color = $color;
+    }
+
+    public function cleaning(): void
     {
-       $this->propre = true;
+       $this->clean = true;
     }
 }
 ```
 
 ### Instructions
 
-On souhaite réaliser la fonction permettant d’allumer le chauffage d’une piscine automatiquement en fonction de la température actuelle, et de la température moyenne des derniers jours.
+We want to perform the function allowing the heating of a swimming pool to be turned on automatically according to the current temperature, and the average temperature of the last few days.
 
-Créer une interface nommée `PoolTempsInterface` qui définira les fonctions suivantes :
-- getActualTemp() : Retourne la température actuelle.
-- getLastDaysTemps() : Retourne la liste des températures des 7 derniers jours.
-- setHeater(bool) : Allume ou éteint le chauffage de la piscine en fonction du booléen.
+Create an interface named `PoolTempsInterface` which will define the following functions :
 
-Créer ensuite une classe nommée `PoolTemps` qui implémentera la `PoolTempsInterface`. 
-Implémenter les différentes fonctions puis créer une fonction `activateHeater` qui permettra de déclencher le chauffage si toutes les conditions sont réunies :
+- getActualTemp() : Returns the current temperature.
+- getLastDaysTemps() : Returns the list of temperatures for the last 7 days.
+- setHeater(bool) : Turns the pool heating on or off according to the boolean.
 
-- La température moyenne des 7 derniers jours est supérieure à 20°
-- La température actuelle est supérieure à 25°
+Then create a class named `PoolTemps` which will implement the` PoolTempsInterface`.
+Implement the different functions then create an `activateHeater` function which will trigger the heating if all the conditions are met :
 
-Exemples d'utilisations : 
+- The average temperature of the last 7 days is above 20 °
+- The current temperature is above 25 °
+
+Examples of uses :
+
 ```php
 $poolTemps = new PoolTemps(25, [19, 20, 21, 16, 19, 23, 20]);
 $poolTemps->activateHeater();

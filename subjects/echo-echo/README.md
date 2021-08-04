@@ -1,45 +1,48 @@
 ### Echo echo
 
-### Explications
+### Explanations
 
-Pour afficher une chaine de caractères en PHP, nous passons par la fonction `echo`.
+To display a string of characters in PHP, we use the `echo` function.
 
-Exemples : 
+Examples :
+
 ```php
-echo "Hello guys"; // Affiche Hello guys
+echo "Hello guys"; // Display Hello guys
 
-echo "Hello", "guys"; // Affiche Helloguys
-echo "Helloguys"; // Affiche Helloguys
+echo "Hello", "guys"; // Display Helloguys
+echo "Helloguys"; // Display Helloguys
 
 $name = 'toto';
-echo "My name is : $name"; // Affiche My name is : toto
+echo "My name is : $name"; // Display My name is : toto
 ```
 
 ### Indications 😉
 
-**Pour chaque exercise nécessitant des affichages à la fonction `echo`. N'oubliez de sauter une ligne a la fin chaque echo.**
+**For each exercise requiring displays to the `echo` function. Remember to skip a line at the end of each echo.**
 
-Exemple : 
+Example :
 
 ```php
-echo "Mon premier echo" . PHP_EOL;
+echo "My first echo". PHP_EOL;
 
-echo "Mon second echo" . PHP_EOL;
+echo "Mon second echo". PHP_EOL;
 
-echo "Mon dernier echo"
+echo "My last echo"
 ```
 
-> `PHP_EOL` est la constante qui contient le caractère de saute de ligne `\n`
+> `PHP_EOL` is the constant that contains the newline character `\n`
 
 ### Instructions
 
-- Créer une variable `myVariable` avec la valeur 12.
-- Afficher à l'aide d'un echo la phrase : "This is my first echo !" avec un espace à la fin de la ligne.
-- Afficher à l'aide d'un echo la phrase : "My variable : (contenu de la variable myVariable)".
+- Create a variable `myVariable` with the value 12.
+- Display with an echo the sentence: "This is my first echo !" with a space at the end of the line.
+- Display with an echo the sentence: "My variable : (content of the myVariable variable)".
 
-**Le script doit faire exactement 3 lignes**.
+> Add a **\n** just before the end of your strings
 
-_Ps : Les lignes blanches + la ligne "<?php" ne sont pas prises en compte._
+**The script must be exactly 3 lines**.
+
+_Ps : White lines + the line "<?php" are not taken into account._
 
 ### Notions
 

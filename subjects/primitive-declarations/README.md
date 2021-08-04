@@ -1,35 +1,38 @@
 ### Primitive declarations
 
-### Bienvenue !
+### Welcome !
 
-Bienvenue dans la piscine PHP 8 ! L'idée de cette piscine est de vous présenter `PHP` (langage fabuleux).
-Dans ce cours nous verrons les bases du langage, (variables, conditions, ...) jusqu'aux fondamentaux de la POO (Programmation Orientée Objet).
+Welcome to the PHP 8 pool! The idea of this pool is to introduce you to `PHP`.
+In this course we will see the basics of the language, (variables, conditions, ...) up to the fundamentals of POO (Object Oriented Programming).
 
-### Explications
+### Explanations
 
-#### La syntaxe de PHP
+#### The syntax of PHP
 
-La syntaxe et la sémantique de PHP sont similaires à celles de la plupart des autres langages de programmation, avec en plus le fait que tout code PHP est contenu entre des sortes d'étiquette appelé ***balise***.
+The syntax and semantics of PHP are similar to those of most other programming languages, with the additional fact that all PHP code is enclosed in some sort of label called **_tag_**.
 
-Tout code PHP doit être placé à l'intérieur de ce qui suit :
+All PHP code must be placed inside the following :
 
 ```php
-<?php // On indique à notre fichier / navigateur que l'on va écrire/exécuter du code PHP
+<?php // We tell our file / browser that we’re gonna write/execute PHP code
 
-...Code PHP....
 
-?> Cette balise n'est utile que dans le cas ou l'on met du PHP directement dans une page HTML.
+...PHP Code....
+
+?> This tag is only useful if you put PHP directly into an HTML page.
 ```
 
-_Note : Pour tous les exercises de ce parcours il ne sera pas nécessaire de mettre la balise `?>` à la fin de vos fichiers 😉._
+_Note : For all the exercises of this course it will not be necessary to put the tag `?>` at the end of your files 😉._
 
-***
+---
 
-#### Le Point-virgule
-En PHP comme dans beaucoup d'autre langage, il faut marquer l’arrêt d'une instruction.
-Le point-virgule signifie la fin de celle-ci. Il est indispensable au bon fonctionnement du script. 
+#### The Semicolon
 
-Si nous voulions afficher "Hello !" plusieurs fois, nous aurions besoin de mettre un point-virgule à la fin de chaque instructions comme dans cet exemple :
+In PHP, as in many other languages, it is necessary to mark the end of an instruction.
+The semicolon means the end of it. It is essential for the proper functioning of the script.
+
+If we wanted to display "Hello!" many times we would need to put a semicolon at the end of each statement like in this
+example :
 
 ```php
 <?php
@@ -39,65 +42,65 @@ echo "Hello !";
 echo "Hello !";
 ```
 
-Affiche :
+Display :
 
 Hello !Hello !Hello !
 
 ---
 
-#### C'est parti ? 🙌
+#### Let's go ? 🙌
 
-Maintenant que nous avons vu les bases syntaxiques du langage, nous allons pouvoir commencer à rentrer dans le vif du sujet. 
+Now that we have seen the syntax basics of language, we can begin to get to the heart of the matter.
 
-***Du Développement !*** 
+**_Development !_**
 
-***
+---
 
 #### Variables
 
-La toute **première chose** à apprendre dans n'importe quel langue est *"Comment déclarer une variable ?"*
+The whole **first thing** to learn in any language is _"How do I declare a variable?"_
 
-Voyons un exemple de ce pas : 
+Let’s see an example of this step :
 
 ```php
-$myVariable = "Facile non ?";
+$myVariable = "Easy no?";
 ```
 
-> Vous pouvez remarquer que nous avons utilisé [camelCase](https://en.wikipedia.org/wiki/Camel_case) (le meilleur de tous 🔥) pour le nom de la variable.
+> You can notice that we used [camelCase](https://en.wikipedia.org/wiki/Camel_case) (best of all 🔥) for the variable name.
 
-Toute variable doit être déclarée au moyen du signe dollar `$` suivi obligatoirement de lettres (en majuscule ou en minuscule) ou d'un trait de soulignement (trait de soulignement _).
+Any variable must be declared using the dollar sign `$` followed by letters (upper or lower case) or an underscore (underscore \_).
 
-Les variables peuvent représenter n'importe quel type de valeur, et elles peuvent être réaffectées à différents types.
+Variables can represent any type of value, and they can be reassigned to different types.
 
 ```php
 $maVariable = 5 ;
-$myVariable = "Maintenant, on m'attribue une chaîne ! Fabuleux.";
+$myVariable = "Now I am assigned a string! Fabulous.";
 ```
 
-Vous trouverez ci-dessous un tableau récapitulatif des syntaxes de déclaration de variables incorrectes.
+Below is a summary table of incorrect variable declaration syntaxes.
 
 ```php
-$var 1 = "toto" ; // Pas d'espace
-$var-1 = "toto" ; // Pas de tiret
-$-var = "toto" ; // Pas de tiret
-$20var = "toto" ; // Impossible de commencer par un nombre
-var = "toto" ; // Nécessairement un $ devant le nom
+$var 1 = "toto" ; // No space
+$var-1 = "toto" ; // No dash
+$-var = "toto" ; // No dash
+$20var = "toto" ; // Cannot start with a number
+var = "toto" ; // Necessarily a $ in front of the name
 ```
 
-> **_Note_** : PHP est l'un des rares langages de programmation qui accepte les caractères accentués dans les noms de variables. Cependant, leur utilisation est fortement déconseillée pour des raisons de maintenance et de portabilité.
+> **_Note_** : PHP is one of the few programming languages that accepts accented characters in variable names. However, their use is strongly discouraged for reasons of maintenance and portability.
 
 ### Instructions
 
-Créez les variables suivantes :
+Create the following variables :
 
-- `firstStr` qui est une chaîne de mots.
-- `firstEscapeStr` qui est une chaîne de mots contenant un nouveau caractère de saut de ligne.
-- `firstBool` est un booléen.
-- `firstInteger` est un entier.
-- `firstFloat` est un float.
-- `firstNull` est NULL.
-- `firstArray` est un tableau contenant une propriété pour chaque type primitif :
-  - Valeurs ordonnées : `2, null, 'Hi', 5.5, false`
+- `firstStr` which is a string of words
+- `firstEscapeStr` which is a string of words containing a new line break character.
+- `firstBool` is a boolean.
+- `firstInteger` is an integer.
+- `firstFloat` is a float.
+- `firstNull` is NULL.
+- `firstArray` is an array containing a property for each primitive type :
+  - Ordered values : `2, null, 'Hi', 5.5, false`
 
 ### Notions
 

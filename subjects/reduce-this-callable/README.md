@@ -1,68 +1,71 @@
 ### Reduce this callable
 
-### Explications
+### Explanations
 
 #### Callable
 
-Le mot clé `callable` est utilisé pour forcer un argument de fonction à être une référence à une fonction.
+The `callable` keyword is used to force a function argument to be a reference to a function.
 
-Un `callable` (appelable en français) peut être l'un des suivants :
+A `callable` can be one of the following:
 
-- Une fonction anonyme
-- Une chaîne contenant le nom d'une fonction
-- Un tableau décrivant une méthode de classe statique
-- Un tableau décrivant une méthode objet
+- An anonymous function
+- A string containing the name of a function
+- An array describing a static class method
+- An array describing an object method
 
 ---
 
-Exemples basiques : 
+Basic examples :
 
 ```php
-// Cette fonction attend un callable en premier paramètre.
+// This function expects a callable as the first parameter.
 function printFormatted(callable $format, string $str) {
   echo $format($str);
   echo PHP_EOL;
 }
 
-// Fonction anonyme
+// Anonymous function
 $func = static fn ($str) => substr($str, 0, 5);
 printFormatted($func, "Hello World");
 
-// Une chaîne contenant le nom d'une fonction
+// A string containing the name of a function
 printFormatted("strtoupper", "Hello World");
 ```
 
-Output : 
+Output :
+
 ```php
 Hello
 HELLO WORLD
 ```
+
 ---
 
-Exemples avec un objet : 
+Examples with an object :
 
 ```php
-class MyClass 
+class MyClass
 {
-  public static function ask(string $str): string 
+  public static function ask(string $str): string
   {
      return $str . "?";
   }
-  
-  public function brackets(string $str): string 
+
+  public function brackets(string $str): string
   {
      return "[$str]";
   }
 }
 
-// Un tableau décrivant une méthode de classe statique
+// An array describing a static class method
 printFormatted(["MyClass", "ask"], "Hello World");
 
-//  Un tableau décrivant une méthode objet
+// An array describing an object method
 printFormatted([new MyClass(), "brackets"], "Hello World");
 ```
 
 Output :
+
 ```php
 Hello World?
 [Hello World]
@@ -70,9 +73,9 @@ Hello World?
 
 ### Instructions
 
-Recréer la fonction native `array_reduce` que vous nommerez `myArrayReduce`.
+Recreate the native function `array_reduce` that you will name` myArrayReduce`.
 
-Bien évidemment vous n'êtes pas autorisé à utiliser `array_reduce`.
+Of course you are not allowed to use `array_reduce`.
 
 ### Notions
 

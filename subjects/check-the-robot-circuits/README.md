@@ -2,25 +2,25 @@
 
 ### Instructions
 
-Les scientifiques ont réussi à implémenter des nombres premiers dans le robot, de sorte à pouvoir détecter d'où viennent les bugs. En fait, le robot émmet un nombre lorsqu'il a un bug. Pour détecter l'emplacement du bug, on trouve par quels nombres premiers il est divisible et on se reporte à la table suivante :
+Scientists have successfully implemented prime numbers in the robot, so that they can detect where the bugs are coming from. In fact, the robot emits a number when it has a bug. To detect the location of the bug, we find by which prime numbers it is divisible and we refer to the following table :
 
 ```
-TABLE DE DEBUG
+DEBUG TABLE
 --------------
-2       |   Bras gauche
-3       |   Bras droit
-5       |   Carte mère
-7       |   Processeur
-11      |   Défluxeur de zip
-13      |   Moteur
+2       |   Left arm
+3       |   Right arm
+5       |   Motherboard
+7       |   Processor
+11      |   Zip Defluxer
+13      |   Motor
 ```
 
-Créer une fonction nommée `checkCircuits`, prenant en paramètre un `int` et retournant un `array` comme ci-dessous.
+Create a function named `checkCircuits`, taking an `int` as a parameter and returning an `array` as below.
 
-Exemples :
+Examples :
 
-- 9 : divisible par 3 uniquement, la fonction doit retourner un array avec 1 élément : Bras droit
-- 12 : divisible par 2 et 3, la fonction doit retourner un array avec 2 éléments : Bras gauche et Bras droit.
+- 9 : divisible by 3 only, the function must return an array with 1 element : Right arm
+- 12 : divisible by 2 and 3, the function must return an array with 2 elements : Left arm et Right arm.
 
 ### Notions
 

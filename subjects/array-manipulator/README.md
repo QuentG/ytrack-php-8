@@ -4,22 +4,17 @@ Recreate most usable basic array functions.
 
 ### Instructions
 
-- Créer une fonction `reverse(array)` qui va inverser l'ordre des éléments d'un tableau.
+- Create a `reverse(array)` function which will reverse the order of the elements of an array.
 
+- Create a `push(array, value)` function which will stack one or more elements at the end of an array.
 
-- Créer une fonction `push(array, value)` qui va empiler un ou plusieurs éléments à la fin d'un tableau.
+- Create a `sum(array)` function which will calculate the sum of the values ​​of an array.
 
+- Create an `arrayContains(value, array)` function which will indicate if a value belongs to an array.
 
-- Créer une fonction `sum(array)` qui va calculer la somme des valeurs d'un tableau.
+- Create a `merge(array, ... array, ... array, ...)` function which will merge several arrays into one.
 
-
-- Créer une fonction `arrayContains(value, array)` qui va indique si une valeur appartient à un tableau.
-
-
-- Créer une fonction `merge(array, ...array, ...array, ...)` qui va fusionner plusieurs tableaux en un seul.
-
-
-__Astuce__ : Variadic functions / Spread operators 
+**Trick** : Variadic functions / Spread operators
 
 ### Notions
 

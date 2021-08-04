@@ -2,11 +2,11 @@
 
 ### Instructions
 
-Recréer la fonction native `array_filter` que vous nommerez `myArrayFilter`.
+Recreate the native `array_filter` function that you will name` myArrayFilter`.
 
-Ne pas implémenter le troisième paramètre "mode" de la fonction native.
+Do not implement the third "mode" parameter of the native function.
 
-Bien évidemment vous n'êtes pas autorisé à utiliser `array_filter`.
+Of course you are not allowed to use `array_filter`.
 
 ### Notions
 

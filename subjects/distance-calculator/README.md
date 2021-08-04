@@ -1,8 +1,8 @@
 ### Distance calculator 🚀
 
-### Explications
+### Explanations
 
-Pour définir une méthode statique, vous placez le mot-clé static devant le mot-clé function comme suit :
+To define a static method, you place the static keyword in front of the function keyword as follows:
 
 ```php
 <?php
@@ -16,21 +16,23 @@ Pour définir une méthode statique, vous placez le mot-clé static devant le mo
  }
 ```
 
-Puisqu'une méthode statique est liée à une classe, et non à une instance individuelle de la classe, vous ne pouvez pas accéder à $this à l'intérieur de la méthode. Cependant, vous pouvez accéder à une variable spéciale appelée self. 
+Since a static method is bound to a class, and not to an individual instance of the class, you cannot access $this inside the method. However, you can access a special variable called self.
 
-La variable `self` désigne la classe actuelle.
+The variable `self` designates the current class.
 
-Ce qui suit montre comment appeler une méthode statique depuis l'intérieur de la classe :
+The following shows how to call a static method from inside the class:
+
 ```php
 self::staticMethod(arguments);
 ```
 
-Pour appeler une méthode statique depuis l'extérieur de la classe, vous utilisez la syntaxe suivante :
+To call a static method from outside the class, you use the following syntax:
+
 ```php
 className::staticMethod(arguments);
 ```
 
-Exemple :
+Example :
 
 ```php
 MyClass::staticMethod();
@@ -38,21 +40,22 @@ MyClass::staticMethod();
 
 ### Instructions
 
-Créer une classe `Geolocation`.
+Create a `Geolocation` class.
 
-Dans cette classe créer une méthode statique `fromGeoPoints` qui va calculer la distance en deux coordonnées géographiques.
+In this class create a static method `fromGeoPoints` which will calculate the distance in two geographic coordinates.
 
-Le résultat retourné sera un tableau avec la distance en `kilomètre`
+The returned result will be an array with the distance in `kilometers`
 
-⚠ Le résultat doit être arrondi à deux chiffres après la virgule.
+⚠ The result must be rounded off to two decimal places.
 
-Exemple : 
+Example :
+
 ```php
 <?php
 
 $calc = Geolocation::fromGeoPoints(40.76, -73.984, 38.89, -77.032); // 333.09
 ```
 
-### Notions 
+### Notions
 
 - [php.net/manual/en/language.oop5.static.php](https://www.php.net/manual/en/language.oop5.static.php)

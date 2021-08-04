@@ -2,24 +2,27 @@
 
 ### Instructions
 
-On considère un ascenseur avec le fonctionnement suivant :
-- L'ascenseur va en priorité à l'étage demandé.
-- S'il est appelé, l'ascenseur va en direction de l'étage appelé le plus proche.
-- L'ascenseur s'arrête aux étages demandés ou appelés.
+We consider an elevator with the following operation:
 
-Créez une fonction appelée `getFloor` qui s'occupera de récupérer l'étage auquel l'ascenseur doit aller.
+- The elevator goes in priority to the requested floor.
+- If called, the elevator goes to the nearest called floor.
+- The elevator stops at the floors requested or called.
 
-`getFloor` avec les paramètres disponibles suivants :
-- L'étage actuel de l'ascenseur : `int`
-- L'étage demandé : `int|null`
-- La liste des boutons appelés : `array`
+Create a function called `getFloor` which will take care of getting the floor to which the elevator should go.
 
-Créez une fonction `getDirection` pour donner la direction dans laquelle l'ascenseur doit se déplacer. La fonction doit retourner un entier = 0 si aucun mouvement n'est nécessaire, -1 pour descendre et +1 pour monter.
+`getFloor` with the following available parameters:
 
-`getDirection` avec les paramètres disponibles suivants :
-- L'étage actuel de l'ascenseur : `int`
-- L'étage demandé : `int|null`
-- La liste des boutons appelés : `array`
+- The current floor of the elevator: `int`
+- The requested floor: `int|null`
+- The list of buttons called: `array`
+
+Create a `getDirection` function to give the direction in which the elevator should move. The function should return an integer = 0 if no movement is needed, -1 to go down and +1 to go up.
+
+`getDirection` with the following available parameters:
+
+- The current floor of the elevator: `int`
+- The requested floor: `int | null`
+- The list of buttons called: `array`
 
 ### Notions
 

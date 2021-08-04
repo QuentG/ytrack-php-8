@@ -1,45 +1,43 @@
 ### Multiplication table
 
-### Explications
+### Explanations
 
-Les boucles exécutent un bloc de code un nombre de fois spécifique, ou tant qu'un état spécifique est vrai.
+Loops execute a block of code a specific number of times, or while a specific state is true.
 
-Quand vous écrivez le code, vous voulez que le même bloc de code fonctionne maintes fois. Au lieu d'ajouter plusieurs lignes presque égales dans un script nous employerons des boucles pour effectuer cette tâche ! 😃
+When you write code, you want the same block of code to work over and over again. Instead of adding several almost equal lines in a script we will use loops to do this task! 😃
 
-Dans le PHP, les éléments suivants créent des boucles :
+In PHP the following elements create loops :
 
-- while (tant que) - exécute les boucles pour un bloc de code tant qu'un état spécifique est vrai
+- while (tant que) - execute loops for a block of code while a specific state is true
 
+- do...while - execute loops for a block of code once, and then repeat the loop as long as a specific state is true
 
-- do...while - exécute les boucles pour un bloc de code une fois, et puis répète la boucle tant que un état spécifique est vrai
+- for (pour) - executes loops for a block of code a specific number of times
 
+- foreach - loops for a block of code for each element in a series
 
-- for (pour) - exécute des boucles pour un bloc de code un nombre de fois spécifique
+---
 
+#### While loop
 
-- foreach - boucles pour un bloc de code pour chaque élément dans une serie
-
---- 
-
-#### Boucle while
-
-La boucle while exécute un bloc de code tant qu'une condition est vraie.
+The while loop executes a block of code as long as a condition is true.
 
 ![img.png](img.png)
 
-Syntaxe :
+Syntax :
 
 ```php
 while (condition) {
-    // code à exécuter;
+    //code to be executed;
 }
 ```
 
 ### Instructions
 
-A l'aide d'une boucle `while` afficher la table de multiplication de 9.
+Using a `while` loop display the multiplication table of 9.
 
-Résultat attendu :
+Expected result :
+
 ```php
 1 * 9 = 9
 2 * 9 = 18
@@ -53,9 +51,9 @@ Résultat attendu :
 10 * 9 = 90
 ```
 
-**Le script doit faire maximum 6 lignes**
+**The script must be a maximum of 6 lines**
 
-Vous n'êtes pas autorisé à utiliser la fonction 'range'.
+You are not allowed to use the 'range' function.
 
 ### Notions
 

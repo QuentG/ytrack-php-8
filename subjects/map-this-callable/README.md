@@ -2,9 +2,9 @@
 
 ### Instructions
 
-Recréer la fonction native `array_map` que vous nommerez `myArrayMap`.
+Recreate the native function `array_map` that you will name` myArrayMap`.
 
-Bien évidemment vous n'êtes pas autorisé à utiliser `array_map`.
+Of course you are not allowed to use `array_map`.
 
 ### Notions
 

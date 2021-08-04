@@ -2,11 +2,12 @@
 
 ### Instructions
 
-Créer une fonction `invertTree(BinaryNode): BinaryNode` qui va inverser un arbre binaire.
+Create an `invertTree (BinaryNode): BinaryNode` function which will invert a binary tree.
 
-En utilisant le code suivant : 
+Using the following code :
+
 ```php
-// Arborescence des données
+// Data tree
 class BinaryNode
 {
     public ?int $value = null; // Node value
@@ -20,7 +21,7 @@ class BinaryNode
 }
 ```
 
-Exemples d'utilisations : 
+Examples of uses :
 
 ```php
 /**
@@ -41,17 +42,17 @@ Exemples d'utilisations :
  * 7   6 5   4
  */
 
- // Usage de base
+ // Basic use
  $root = new BinaryNode(1);
  $rootLeftChild = new BinaryNode(2);
  $rootRightChild = new BinaryNode(3);
 
  $root->left = $rootLeftChild;
  $root->right = $rootRightChild;
- 
+
  echo $root->value; // 1
  echo $root->left->value; // 2
- echo $root->right->value; // 3 
+ echo $root->right->value; // 3
 
  $invertedTree = invertTree($root);
 

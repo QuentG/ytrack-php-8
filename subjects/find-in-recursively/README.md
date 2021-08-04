@@ -2,15 +2,17 @@
 
 ### Instructions
 
-Créez une fonction `findIn` qui récupère la valeur d'une clé dans un tableau ou false si aucune clé ne porte ce nom.
+Create a `findIn` function that retrieves the value of a key in an array or false if no key with that name.
 
-`findIn` avec les paramètres disponibles suivants :
-- La clé de valeur à trouver : `string`
-- Le tableau : `tableau`
+`findIn` with the following available parameters:
 
-**Utilisez la récursivité !!!**
+- The value key to find : `string`
+- The array : `array`
 
-Utilisez ce tableau :
+**Use recursion !!!**
+
+Use this array:
+
 ```php
 $tab = [
     "name" => "forIn",
@@ -26,7 +28,8 @@ $tab = [
 ];
 ```
 
-Exemple : 
+Example :
+
 ```php
 findIn('name', $tab) // forIn
 findIn('description', $tab) // the value key to find

@@ -1,10 +1,10 @@
 ### Say hello to functions
 
-### Explications
+### Explanations
 
-Maintenant que les bases des `variables` et des `boucles` sont en place, nous allons enfin pouvoir voir comment construire nos propres `fonctions` 👀.
+Now that the basics of `variables` and` loops` are in place, we will finally be able to see how to build our own `functions` 👀.
 
-Voyons un exemple et expliquons-le !
+Let's see an example and explain it!
 
 ```php
 function getScore(int $score): string
@@ -13,27 +13,28 @@ function getScore(int $score): string
 }
 ```
 
-Pour créer une fonction, nous utilisons l'instruction `function` suivie du nom que nous voulons donner à cette fonction (`getScore` ici), suivi de 2 parenthèses. A l'intérieur de ses parenthèses nous retrouvons les différents paramètres (optionnel ou non).
+To create a function, we use the `function` instruction followed by the name we want to give to this function (` getScore` here), followed by 2 parentheses. Inside its parentheses we find the various parameters (optional or not).
 
-Depuis _php 5.2_ vous pouvez spécifier le type de retour de la fonction en mettant un deux-points, et le type (`: string` ici).
+Since _php 5.2_ you can specify the return type of the function by putting a colon, and the type (`: string` here).
 
-Les instructions à exécuter lors de l'appel de cette fonction seront placées entre deux accolades.
+The instructions to be executed when this function is called will be placed between two braces.
 
 ### Indications 😉
 
-***Pour tous les exercises nécessitant la création de fonction, veuillez bien préciser le type de retour de la fonction avec les***
-`: leTypedeRetour`
+**_For all the exercises requiring the creation of a function, please specify the return type of the function with the_**
+`: TheReturnType`
 
-***Si plusieurs types de retour possible alors :*** `: lePremierTypedeRetour|LeSecond|...`
+**_If several types of return possible then:_** `: TheFirstReturnType|TheSecond|...`
 
 ### Instructions
 
-Créez une fonction `sayHello` qui dit "Bonjour".
+Create a `sayHello` function that says "Hello".
 
-Créez une fonction `sayHelloTo` qui dit "Hello $name".
+Create a `sayHelloTo` function that says "Hello $name".
 
-`sayHelloTo` avec les paramètres disponibles suivants :
-- Le nom : `string`
+`sayHelloTo` with the following available parameters:
+
+- The Name : `string`
 
 ### Notions
 

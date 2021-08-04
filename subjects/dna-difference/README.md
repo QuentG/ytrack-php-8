@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Des généticiens ont besoin de calculer les différences entre deux brins d'ADN représentés par exemple comme suit :
+Geneticists need to calculate the differences between two strands of DNA represented, for example, as follows :
 
 ```
 GAGCCTACTAACGGGAT
@@ -10,11 +10,13 @@ CATCGTAATGACGGCCT
 ^ ^ ^  ^ ^    ^^
 ```
 
-> Les différences sont représentées par `^`. Par exemple ici, la réponse est 7.
+> The differences are represented by `^`. For example here the answer is 7.
 
 Créez une fonction `dnaDiff` qui prend en paramètres obligatoires deux `string` et retourne le nombre de différences entre les deux brins d'ADN. Si les deux brins d'ADN ne font pas la même taille retournez false.
 
-Vous n'êtes pas autorisé à utiliser les fonctions natives `array_diff` ou `array_diff_assoc`, faites la vôtre.
+Create a `dnaDiff` function which takes two `strings` as mandatory parameters and returns the number of differences between the two strands of DNA. If the two DNA strands are not the same size return false.
+
+You are not allowed to use the native `array_diff` or` array_diff_assoc` functions, make your own.
 
 ### Notions
 

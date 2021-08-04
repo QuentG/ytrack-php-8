@@ -2,17 +2,19 @@
 
 ### Instructions
 
-Créez une fonction `createCheckerboard` qui créera un damier selon une taille passée en paramètre.
+Create a `createCheckerboard` function which will create a checkerboard according to a size passed in parameter.
 
-- "0" égal à la case blanche
-- "X" égal à la case noir
+- "0" equal to the white box
+- "X" equal to the black box
 
-`createCheckerboard` avec le paramètre suivant :
-- La taille du plateau : `int`
+`createCheckerboard` with the following parameter:
 
-Exemple : 
+- The size of the board : `int`
+
+Example :
+
 ```php
-createCheckerboard(2); 
+createCheckerboard(2);
 // will return
 [
     "0", "X",

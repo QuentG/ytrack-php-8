@@ -4,20 +4,19 @@ Recreate most usable basic string functions.
 
 ### Instructions
 
-- Créer une fonction `capsMe(string)` qui va mettre toute la chaine de caractère passé en paramètre en majuscule.
+- Create a `capsMe(string)` function which will capitalize the entire character string passed as a parameter.
 
 
-- Créer une fonction `lowerMe(string)` qui va mettre toute la chaine de caractère passé en paramètre en minuscule.
+- Create a `lowerMe(string)` function which will put the whole character string passed in parameter in lowercase.
 
 
-- Créer une fonction `upperCaseFirst(string)` qui va mettre toutes les premières lettres de chaque mot en majuscule.
+- Create an `upperCaseFirst(string)` function which will capitalize all the first letters of each word.
 
 
-- Créer une fonction `lowerCaseFirst(string)` qui va mettre toute les premières lettres de chaque mot en minuscule.
+- Create a function `lowerCaseFirst(string)` which will put all the first letters of each word in lowercase.
 
 
-- Créer une fonction `removeBlankSpace(string)` qui va enlever tous les espaces.
-
+- Create a function `removeBlankSpace(string)` which will remove all spaces.
 
 ### Notions
 

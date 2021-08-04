@@ -2,10 +2,10 @@
 
 ### Instructions
 
-Créer une fonction `reverse(string): string` qui va inverser une chaine de caractère passée en paramètre.
+Create a `reverse(string): string` function which will reverse a character string passed as a parameter.
 
-Créer une fonction `isPalindrome(string): bool` qui va détecter si la chaine de caractère passée en paramètre est un palindrome.
+Create an `isPalindrome(string): bool` function which will detect if the character string passed in parameter is a palindrome.
 
 ### Notions
 
-- Pas de nouvelles notions particulières.
+- No new particular notions.

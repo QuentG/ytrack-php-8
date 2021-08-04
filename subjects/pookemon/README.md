@@ -23,12 +23,12 @@ Parameters :
 - strength: strength of the pokemon
 
 Functions:
-- attack($pokemon): int | float: attack a pokemon
-- hit $damages): int | float: takes damages
-- heal($heal): int | float: heal
-- isDead(): bool: check if the pokemon is dead
-- levelUp(): void: allows you to gain a level
-- sayHello(): void: say hello
+- attack($pokemon): int|float : attack a pokemon
+- hit($damages): int|float : takes damages
+- heal($heal): int|float : heal
+- isDead(): bool : check if the pokemon is dead
+- levelUp(): void : allows you to gain a level
+- sayHello(): void : say hello
 
 The `sayHello` function must be called each time a new pokemon is instantiated.
 
@@ -47,7 +47,7 @@ Settings :
 - level: level of the pokéball
 
 Functions:
-- tryCatch ($pokemon): bool: try to catch a pokemon
+- tryCatch($pokemon): bool : try to catch a pokemon
 
 Make sure that we can't create a Ball object.
 
@@ -64,7 +64,7 @@ Parameters :
 - heal: number of pv returned
 
 Functions:
-- use($pokemon): bool: heal a pokemon
+- use($pokemon): bool : heal a pokemon
 
 Make sure that we can't create a Heal item.
 
@@ -82,13 +82,13 @@ Parameters :
 - bag: an array containing the different objects
 
 Functions:
-- countInBag($ bject): int: count the number of object passed in parameter in the bag
-- removeFromBag($object): bool: remove an object from the bag
-- getInBag($object): bool | object: get an object in the bag, otherwise false if it is not there
-- couldKill($atackant, $attacked): bool: check if a pokemon can knock out another one
-- captureProbabillity(): int: gives the probability of capturing a pokemon
-- tryCapture(): bool: try to capture a pokemon
-- heal($pokemon, $potion): int | float: heal a pokemon
+- countInBag($ bject): int : count the number of object passed in parameter in the bag
+- removeFromBag($object): bool : remove an object from the bag
+- getInBag($object): bool|object : get an object in the bag, otherwise false if it is not there
+- couldKill($atackant, $attacked) : bool: check if a pokemon can knock out another one
+- captureProbabillity() : int : gives the probability of capturing a pokemon
+- tryCapture(): bool : try to capture a pokemon
+- heal($pokemon, $potion): int|float : heal a pokemon
 - attack(): attack a pokemon
 - play(): bool : launch the bot
 

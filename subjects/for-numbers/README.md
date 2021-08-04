@@ -1,45 +1,45 @@
-### For numbers ! 🦾
+### For numbers !
 
-### Explications
+### Explanations
 
-La boucle for en PHP ne fonctionne pas comme la boucle while ou do... while, dans le cas d'une boucle for, nous devons déclarer à l'avance combien de fois nous voulons que la boucle s'exécute.
+The for loop in PHP does not work like the while or do ... while loop, in the case of a for loop we have to declare in advance how many times we want the loop to execute.
 
 ![img.png](img.png)
 
---- 
+---
 
-Syntaxe :
+Syntax :
 
 ```php
 <?php
 
-for(initialisation; condition; increment/decrement) {
-    /* 
-        Exécuter ce code jusqu'à ce que le
-        la condition soit vraie
+for(initialization; condition; increment/decrement) {
+    /*
+        Run this code until the
+        condition is true
     */
 }
 ```
-Les paramètres utilisés ont la signification suivante :
 
-- Initialisation : Ici, nous initialisons une variable avec une certaine valeur. Cette variable agit comme le compteur de boucle.
+The parameters used have the following meaning :
 
+- Initialization : Here we initialize a variable with a certain value. This variable acts as the loop counter.
 
-- Condition : On définit ici la condition qui est vérifiée après chaque itération/cycle de la boucle. Si la condition retourne vrai, alors seule la boucle est exécutée.
+- Condition : We define here the condition which is checked after each iteration / cycle of the loop. If the condition returns true, then only the loop is executed.
 
+- Incrémenter/décrémenter : Here we increment or decrement the loop counter as required.
 
-- Incrémenter/décrémenter : Ici, nous incrémentons ou décrémentons le compteur de boucle selon les exigences.
+Examples :
 
-Exemples : 
 ```php
 <?php
 
-// Afficher les 10 premiers chiffres.
+// Display the first 10 digits.
 for ($i = 1; $i <= 10; ++$i) {
     echo $i; // 12345678910
 }
 
-// Afficher que les chiffres qui sont un modulo de 2
+// Show only digits that are a modulus of 2
 for ($p = 0; $p < 10; ++$p) {
     if ($p % 2) {
         echo $p . ' '; // 1 3 5 7 9
@@ -49,17 +49,18 @@ for ($p = 0; $p < 10; ++$p) {
 
 ### Instructions
 
-A l'aide d'une boucle for afficher les nombres premiers inférieurs à 100.
-Séparer chaque nombre premier par une virgule (sauf pour le dernier).
+Using a for loop display prime numbers less than 100.
+Separate each prime number with a comma (except for the last).
 
-Résultat attendu :
+Expected result :
+
 ```php
 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
 ```
 
-**Le script doit faire maximum 12 lignes**
+**The script must be a maximum of 12 lines**
 
-Vous n'êtes pas autorisé à utiliser la fonction 'range'.
+You are not allowed to use the 'range' function.
 
 ### Notions
 

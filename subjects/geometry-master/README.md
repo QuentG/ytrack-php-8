@@ -1,50 +1,50 @@
 ### Geometry master
 
-### Explications
+### Explanations
 
-#### Qu'est-ce qu'une classe abstraite ?
+#### What is an abstract class?
 
-Nous définissons une classe abstraite en utilisant le mot-clé `abstract`. Une classe définie comme abstraite ne **peut pas être instanciée**.
+We define an abstract class using the keyword `abstract`. A class defined as abstract cannot **be instantiated**.
 
-Voici quelques points importants concernant la classe et la méthode abstraites :
+Here are some important points about the abstract class and method :
 
-- Une classe abstraite peut avoir des méthodes et des propriétés comme n'importe quelle autre classe normale.
-- Une classe abstraite ne peut pas être instanciée, nous devons créer une classe enfant qui l'étend, puis nous pouvons créer un objet de la classe enfant.
-- Si une classe a ne serait-ce qu'une seule méthode abstraite, alors la classe devrait également être abstraite.
-- Une méthode abstraite n'est que la déclaration où nous fournissons le nom de la méthode et l'argument, tandis que la partie corps est vide.
-  
-Ne vous inquiétez pas si c'est trop dur pour vous de comprendre. Nous allons couvrir tous les points étape par étape avec des exemples, commençons par comprendre comment nous créons une classe abstraite ;). 
+- An abstract class can have methods and properties like any other normal class.
+- An abstract class cannot be instantiated, we need to create a child class that extends it, then we can create an object of the child class.
+- If a class has even one abstract method, then the class should also be abstract.
+- An abstract method is just the declaration where we supply the method name and argument, while the body part is empty.
+
+Don't worry if it's too hard for you to figure out. We will cover all the points step by step with examples, let's first understand how we create an abstract class;).
 
 ---
 
-#### Créer une classe abstraite
+#### Create an abstract class
 
-Pour déclarer une classe abstraite, nous devons utiliser le mot-clé `abstract` avant le nom de la classe.
+To declare an abstract class, we need to use the `abstract` keyword before the class name.
 
-Exemple : 
+Example :
 
 ```php
 <?php
 
 // abstract class
-abstract class Vehicule {
+abstract class Vehicle {
   // abstract function mileage
-  abstract public function kilometrage() {}
+  abstract public function mileage() {}
 }
 ```
 
-Dans l'exemple ci-dessus, notre classe Vehicule est une classe abstraite, qui a une méthode abstraite.
+In the example above, our Vehicle class is an abstract class, which has an abstract method.
 
-> L'idée derrière la création d'une classe abstraite est de contraindre les développeurs à suivre un ensemble de directives, par exemple, si vous souhaitez créer une nouvelle classe qui étend notre classe Vehicule, vous devrez alors fournir une définition pour la méthode abstraite kilometrage(), sinon le la classe enfant doit également être abstraite. 
-> Par conséquent, il est obligatoire pour toutes les classes enfants de fournir une définition pour la méthode kilometrage().
+> The idea behind creating an abstract class is to force developers to follow a set of guidelines, for example if you want to create a new class that extends our Vehicle class then you will need to provide a definition for the abstract mileage() method, otherwise the child class must also be abstract.
+> Therefore, it is mandatory for all child classes to provide a definition for the mileage() method.
 
 ---
 
-#### Méthode non abstraite en classe abstraite
+#### Non-abstract method in abstract class
 
-Toute classe avec même une seule méthode abstraite doit être déclarée abstraite. Mais une classe abstraite peut également avoir des méthodes non abstraites, qui peuvent être consultées et utilisées directement par les classes enfants, sans les écraser.
+Any class with even a single abstract method must be declared abstract. But an abstract class can also have non-abstract methods, which can be accessed and used directly by child classes, without overriding them.
 
-Étendons l'exemple ci-dessus et incluons une méthode non abstraite dans notre classe Véhicule :
+Let's extend the example above and include a non-abstract method in our Vehicle class :
 
 ```php
 <?php
@@ -52,87 +52,87 @@ Toute classe avec même une seule méthode abstraite doit être déclarée abstr
 abstract class Vehicule {
     // protected variable
     protected string $name;
-    
-    // Non-abstract public function demarrer
-    public function demarrer() {
-        echo $this->name. " - La voiture démarre... \n";
+
+    // Non-abstract public function start
+    public function start() {
+        echo $this->name. " - The car starts... \n";
     }
-    
-    // non-abstract public function arreter
-    public function arreter() {
-        echo $this->name. " - La voiture s'arrête... \n";
+
+    // non-abstract public function stop
+    public function stop() {
+        echo $this->name. " - The car stops... \n";
     }
-    
+
     // non-abstract public function setName
     public function setName(string $name) {
         $this->name = $name;
     }
-    
-    // abstract function kilometrage
-    abstract public function kilometrage() {}
+
+    // abstract function mileage
+    abstract public function mileage() {}
 }
 ```
 
-Dans le code ci-dessus, nous avons ajouté trois méthodes non abstraites, à savoir `demarrer()`, `arreter()` et `setName()` à notre classe `Vehicule` abstraite.
+In the code above, we added three non-abstract methods, namely `start ()`, `stop ()` and `setName ()` to our abstract `Vehicle` class.
 
 ---
 
-#### Hériter des classes abstraites
+#### Inherit from abstract classes
 
-Comme toute autre classe, nous pouvons également créer des classes étendant des classes abstraites.
+Like any other class, we can also create classes extending abstract classes.
 
-La seule différence ici est que la classe enfant doit fournir une définition pour la méthode abstraite déclarée dans la classe parent abstraite.
+The only difference here is that the child class must provide a definition for the abstract method declared in the abstract parent class.
 
-Si la classe enfant ne fournit pas de définition pour la méthode abstraite, elle doit également être définie en tant que classe abstraite.
+If the child class does not provide a definition for the abstract method, it must also be defined as an abstract class.
 
-Créons deux classes enfants héritant de la classe Vehicle et qui auront une définition pour la méthode abstraite kilometrage() :
+Let's create two child classes inheriting from the Vehicle class and which will have a definition for the abstract method mileage() :
 
 ```php
 <?php
-// Classe enfant 1
-class Voiture extends Vehicule {
-    public function kilometrage() {
-        echo "Je suis une " . $this->name . PHP_EOL;
-        echo "Mon kilométrage moyen est entre 15 et 22 L/km";
-    } 
+// Child class 1
+class Car extends Vehicle {
+    public function mileage() {
+        echo "I am a " . $this->name . PHP_EOL;
+        echo "My average mileage is between 15 and 22 L/km";
+    }
 }
 
-// Classe enfant 2
-class Moto extends Vehicule {
-    public function kilometrage() {
-        echo "Je suis un " . $this->name . PHP_EOL;
-        echo "Mon kilométrage moyen est 35 et 47 L/km";
+// Child class 2
+class Motorbike extends Vehicle {
+    public function mileage() {
+        echo "I am a " . $this->name . PHP_EOL;
+        echo "My average mileage is between 35 and 47 L/km";
     }
 }
 ```
 
-Comme mentionné ci-dessus, une classe abstraite ne peut avoir aucun objet, une fois que nous avons défini les classes enfants appropriées, nous pouvons créer un objet pour elles.
+As mentioned above, an abstract class cannot have any objects, once we define the appropriate child classes we can create an object for them.
 
 ```php
 <?php
 
  $car = new Car();
  $car->setName("Twingo");
- $car->kilometrage();
- 
- // Je suis une Twingo
- // Mon kilométrage moyen est entre 15 et 22 L/km
+ $car->mileage();
+
+ // I am a Twingo
+ // My average mileage is between 15 and 22 L/km
 ```
 
-**Attention ! Si vous essayez de créer un objet de la classe Vehicule, vous obtiendrez une erreur.**
+**Warning ! If you try to create an object of the Vehicle class, you will get an error.**
 
 ### Instructions
 
-Créer une classe abstraite nommée `AbstractGeometry` qui aura les méthodes abstraites suivantes : 
+Create an abstract class named `AbstractGeometry` which will have the following abstract methods :
 
-- area() - calcule l'air de la forme géométrique
-- perimeter() - calcule le périmètre de la forme géométrique
+- area() - calculate the air of the geometric shape
+- perimeter() - calculate the perimeter of the geometric shape
 
-Créer ensuite une classe `Rectangle`, `Square` et `Triangle`.
+Then create a class `Rectangle`,` Square` and `Triangle`.
 
-Chacune de ses classes (Rectangle, Square) doit avoir un contructeur qui prend en paramètre la largeur (et la hauteur pour le rectangle).
+Each of its classes (Rectangle, Square) must have a constructor which takes as a parameter the width (and the height for the rectangle).
 
-La classe Triangle doit avoir un constructeur qui prend trois paramètres.
+The Triangle class must have a constructor that takes three parameters.
 
 ### Notions
 

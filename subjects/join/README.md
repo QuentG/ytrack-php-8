@@ -2,20 +2,21 @@
 
 ### Instructions
 
-Créez une fonction `joinWords` qui prend un tableau de mots comme premier argument et un séparateur comme deuxième argument.
+Create a `joinWords` function that takes an array of words as the first argument and a separator as the second argument.
 
-Cette fonction pourra joindre des valeurs de tableaux avec un séparateur donné.
+This function will be able to join values of arrays with a given separator.
 
-Le deuxième paramètre sera par défaut égal à un espace s'il n'est pas renseigné.
+The second parameter will by default be equal to a space if it is not filled in.
 
-Exemples : 
+Examples :
+
 ```php
 joinWords(['My', 'name', 'is', 'John']); // My name is John
 
 joinWords(['My', 'name', 'is', 'John'], "-"); // My-name-is-John
 ```
 
-Vous n'êtes pas autorisé à utiliser 'implode' ou 'join', créez la vôtre.
+You are not allowed to use 'implode' or 'join', create your own.
 
 ### Notions
 

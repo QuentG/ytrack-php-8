@@ -1,148 +1,148 @@
 ### Many fuel
 
-### Explications
+### Explanations
 
-#### Visibilité
+#### Visibility
 
-PHP 5 introduit la notion de visibilité de méthodes et d'attributs. Chaques attributs et méthodes peuvent se voir attribuer un droit d'accès. 
+PHP 5 introduces the notion of visibility of methods and attributes. Each attribute and method can be assigned an access right.
 
-Le principe de l'encapsulation voudrait que l'on mette tous les attributs uniquement modifiables et accessibles à l'intérieur de la classe, et les méthodes accessibles de l'extérieur. En pratique, ce n'est pas toujours le cas.
+The principle of encapsulation would be that we put all the attributes that are only modifiable and accessible inside the class, and the methods accessible from the outside. In practice, this is not always the case.
 
-Les trois mots permettant de gérer les accès sont ceux-ci :
+The three words used to manage access are :
 
-- `public` : n'importe qui a accès à la méthode ou à l'attribut demandé.
-- `protected` : seule la classe ainsi que ses sous classes éventuelles (classes héritées, on verra ce que c'est plus loin).
-- `private` : seule la classe ayant défini l'élément peut y accéder.
+- `public` : anyone has access to the requested method or attribute.
+- `protected` : only the class as well as its possible subclasses (inherited classes, we will see what it is later).
+- `private` : only the class that defined the element can access it.
 
-Pour la classe Voiture, vous pouvez constater que les attributs ne sont pas modifiables à l'extérieur de la classe, il faut passer par les **méthodes appropriées**.
+For the Car class, you can see that the attributes are not modifiable outside the class, you have to go through the **appropriate methods**.
 
-Pour accéder à un attribut d'une classe, on utilise ce code : $objet->attribut
+To access an attribute of a class, we use this code : $object-> attribute
 
-Exemple : 
+Example :
 
 ```php
 <?php
 
- class Voiture 
+ class Car
  {
-      //  ↙ Visibilité sur les attributs
-      private float $niveauCarburant;
-      protected int $nombrePortes;
-      public int $nombreRoues;
+      //  ↙ Visibility on attributes
+      private float $fuelLevel;
+      protected int $doorsNumber;
+      public int $wheelNumber;
 
-      //  ↙ Visibilité sur les fonctions
+      //  ↙ Visibility into functions
       public function __construct()
       {
-           $this->niveauCarburant = 45.4;
-           $this->nombrePortes = 3;
-           $this->nombreRoues = 4;
+           $this->fuelLevel = 45.4;
+           $this->doorsNumber = 3;
+           $this->wheelNumber = 4;
       }
  }
 ```
 
 ---
 
-#### Accesseurs && mutateurs
+#### Accessors && mutators
 
-En règle générale, on n'accède pas directement aux attributs d'un objet. Pour lire et modifier leurs valeurs, on passe par des méthodes qui permettent de sécuriser leur utilisation.
+As a rule, you do not directly access the attributes of an object. To read and modify their values, we go through methods that make it possible to secure their use.
 
-Ces méthodes s'appellent des accesseurs (getter) pour lire leurs valeurs et des mutateurs (setter) pour modifier leurs valeurs.
+These methods are called getter to read their values ​​and setter to modify their values.
 
-Une des conventions souvent utilisée est de reprendre le nom de l'attribut pour créer les méthodes, en ajoutant `get` pour les accesseurs et `set` pour les mutateurs
+One of the conventions often used is to take the name of the attribute to create the methods, adding `get` for the accessors and` set` for the mutators
 
-Exemple : 
+Example :
 
 ```php
 <?php
 
- class Voiture 
+ class Car
  {
-      // Attributs && Constructeur    
-     
+      // Attributes && Constructor
+
       // ....
-     
+
       // Getters
-      public function getNiveauCarburant(): float
+      public function getFuelLevel(): float
       {
-          return $this->niveauCarburant;
+          return $this->fuelLevel;
       }
-      
-      public function getNombrePortes(): int
+
+      public function getDoorsNumber(): int
       {
-          return $this->nombrePortes;
+          return $this->doorsNumber;
       }
-      
-      public function getNombreRoues(): int
+
+      public function getWheelNumber(): int
       {
-          return $this->nombreRoues;
+          return $this->wheelNumber;
       }
-     
-      // Setters 
-      public function setNiveauCarburant(float $niveauCarburant): self
+
+      // Setters
+      public function setFuelLevel(float $fuelLevel): self
       {
-          $this->niveauCarburant = $niveauCarburant;
-          
+          $this->fuelLevel = $fuelLevel;
+
           return $this;
       }
-      
-      public function setNombrePortes(int $nombrePortes): self
+
+      public function setDoorsNumber(int $doorsNumber): self
       {
-          $this->nombrePortes = $nombrePortes;
-          
+          $this->doorsNumber = $doorsNumber;
+
           return $this;
       }
-      
-      public function setNombreRoues(int $nombreRoues): self
+
+      public function setWheelNumber(int $wheelNumber): self
       {
-          $this->nombreRoues = $nombreRoues;
-          
+          $this->wheelNumber = $wheelNumber;
+
           return $this;
       }
  }
 ```
 
-Résultat : 
+Results :
 
 ```php
 <?php
 
-$voiture = new Voiture(); // Instanciation d'une nouvelle voiture
+$Car = new Car(); // Instantiating a new Car
 
-$voiture->niveauCarburant; // Fatal Error !!
-$voiture->nombrePortes; // Fatal Error !!
-$voiture->nombreRoues; // 4
+$Car->fuelLevel; // Fatal Error !!
+$Car->doorsNumber; // Fatal Error !!
+$Car->wheelNumber; // 4
 
-$voiture->getNiveauCarburant(); // 45.4
-$voiture->getNombrePortes(); // 3
-$voiture->getNombreRoues(); // 4
+$Car->getFuelLevel(); // 45.4
+$Car->getDoorsNumber(); // 3
+$Car->getWheelNumber(); // 4
 
-$voiture->setNiveauCarburant(100) // Changement du niveau de carburant + nombre de portes 
-    ->setNombrePortes(2);
-    
-$voiture->getNiveauCarburant(); // 100
-$voiture->getNombrePortes(); // 2
+$Car->setFuelLevel(100) // Change of fuel level + number of doors
+    ->setDoorsNumber(2);
+
+$Car->getFuelLevel(); // 100
+$Car->getDoorsNumber(); // 2
 ```
 
-> Tous les accesseurs (setters) retourne le mot clé `$this`, ce principe s'appelle le chainage de méthodes ou plus communément en anglais `Fluent methods`.
+> All accessors (setters) return the keyword `$this`, this principle is called method chaining or more commonly in English `Fluent methods`.
 
 ### Instructions
 
-Nous voulons mesurer la quantité de carburant que nous avons dans le réservoir de notre voiture. 
+We want to measure how much fuel we have in our car's tank.
 
-La quantité de carburant dans le réservoir dépend du nombre de kilomètres que nous avons parcourus dans notre voiture, ainsi que de la quantité de carburant que nous mettons dans le réservoir.
+The amount of fuel in the tank depends on the number of kilometers we have driven in our Car, as well as the amount of fuel we put in the tank.
 
-Créer une classe nommée `Car` avec une propriété privée nommée `tank` le nombre de gallons de carburant que nous avons dans le réservoir de la voiture.
+Create a class named `Car` with a private property named `tank` the number of gallons of fuel we have in the tank of the Car.
 
-Créer aussi les accesseurs / mutateurs.
+Also create the accessors / mutators.
 
-Nous devons également ajouter deux méthodes à notre classe `Car` :
+We also need to add two methods to our `Car` class:
 
-- Le mutateur de la propriété `tank` ajoute des gallons de carburant au réservoir de notre voiture.
-- La méthode `ride($float)` calcule la quantité de carburant que nous consommons lorsque nous parcourons une certaine distance, puis la soustrait du réservoir.
+- The mutator of the `tank` property adds gallons of fuel to the tank of our Car.
+- The `ride($ float)` method calculates the amount of fuel we consume when we travel a certain distance, then subtracts it from the tank.
 
-Dans notre exemple, nous supposons que la voiture consomme 1 gallon de carburant tous les 20 Kilomètres.
+In our example, we assume that the Car consumes 1 gallon of fuel every 20 Kilometers.
 
-⚠ Toutes les méthodes (sauf mutateur) doivent être accessible de manière fluent.
+⚠ All methods (except mutator) must be accessible in a fluent manner.
 
 ### Notions
 

@@ -1,12 +1,12 @@
 ### That's anonymous
 
-#### Explications
+#### Explanations
 
-#### Fonction anonyme
+#### Anonymous function
 
-Lorsque vous définissez une fonction, vous lui spécifiez un nom. Plus tard, vous pouvez appeler la fonction par le nom.
+When you define a function, you specify a name for it. Later you can call the function by name.
 
-Par exemple, pour définir une fonction qui multiplie deux nombres, vous pouvez procéder comme suit :
+For example, to define a function that multiplies two numbers, you can do the following :
 
 ```php
 <?php
@@ -17,7 +17,7 @@ function multiply(int|float $x, int|float $y): int|float
 }
 ```
 
-La fonction multiply() accepte deux arguments et renvoie le résultat. Pour appeler la fonction multiply(), vous lui passez les arguments comme ceci :
+The multiply () function accepts two arguments and returns the result. To call the multiply () function, you pass it the arguments like this :
 
 ```php
 <?php
@@ -25,30 +25,30 @@ La fonction multiply() accepte deux arguments et renvoie le résultat. Pour appe
 multiply(10, 20);
 ```
 
-Dans cet exemple, multiply() est une fonction nommée. Et vous pouvez le réutiliser autant de fois que vous le souhaitez.
+In this example, multiply () is a named function. And you can reuse it as many times as you want.
 
-Outre les fonctions nommées, PHP vous permet de définir des fonctions `anonymes`.
+Besides named functions, PHP allows you to define `anonymous` functions.
 
-Une fonction anonyme est une fonction qui n'a pas de nom.
+An anonymous function is a function that has no name.
 
-L'exemple suivant définit une fonction anonyme qui multiplie deux nombres :
+The following example defines an anonymous function that multiplies two numbers :
 
 ```php
 <?php
 
-function (int|float $x, int|float $y): int|float 
+function (int|float $x, int|float $y): int|float
 {
     return $x * $y;
 };
 ```
 
-Comme la fonction n'a pas de nom, vous devez la terminer par un point-virgule (;) car PHP la traite comme une expression.
+Since the function has no name, you must end it with a semicolon (;) because PHP treats it as an expression.
 
-Cette fonction anonyme n'est pas du tout utile car vous ne pouvez pas l'utiliser comme une fonction nommée.
+This anonymous function is not at all useful because you cannot use it as a named function.
 
-Pour utiliser une fonction anonyme, vous devez l'affecter à une variable et appeler la fonction via la variable.
+To use an anonymous function, you must assign it to a variable and call the function through the variable.
 
-L'exemple suivant affecte la fonction anonyme à la variable $multiply :
+The following example assigns the anonymous function to the $multiply variable :
 
 ```php
 <?php
@@ -58,7 +58,7 @@ $multiply = function (int|float $x, int|float $y): int|float {
 };
 ```
 
-Et cela appelle la fonction anonyme via la variable $multiply :
+And this calls the anonymous function via the variable $multiply:
 
 ```php
 <?php
@@ -66,9 +66,9 @@ Et cela appelle la fonction anonyme via la variable $multiply :
 echo $multiply(10, 20);
 ```
 
-#### Portée des fonctions anonymes
+#### Scope of anonymous functions
 
-Par défaut, une fonction anonyme ne peut pas accéder aux variables depuis sa portée parent. Par exemple :
+By default, an anonymous function cannot access variables from its parent scope. For example :
 
 ```php
 <?php
@@ -81,15 +81,15 @@ $say = function () {
 $say();
 ```
 
-Retour PHP : 
+PHP return :
 
 ```
 PHP Notice:  Undefined variable: message in ...
 ```
 
-Dans cet exemple, la fonction anonyme tente d'accéder à la variable $message à partir de sa portée parent. Cependant, il ne le pouvait pas. Par conséquent, PHP a retourné une erreur.
+In this example, the anonymous function tries to access the $ message variable from its parent scope. However, he couldn't. Therefore, PHP returned an error.
 
-Pour utiliser les variables de la portée parent dans une fonction anonyme, vous placez les variables dans la construction `use` comme suit :
+To use the variables of the parent scope in an anonymous function, you place the variables in the `use` construct as follows :
 
 ```php
 <?php
@@ -102,17 +102,17 @@ $say = function () use ($message) {
 $say();
 ```
 
-Maintenant, cela devrait fonctionner correctement.
+Now it should work fine.
 
-Notez que le message $ est passé à la fonction anonyme par valeur, et non par référence. Si vous le modifiez à l'intérieur de la fonction anonyme, le changement ne se reflétera pas à l'extérieur de la fonction. Par exemple:
+Note that the $message is passed to the anonymous function by value, not by reference. If you change it inside the anonymous function, the change will not be reflected outside the function. For example :
 
 ```php
 <?php
 
-$message = 'Salut';
+$message = 'Hi';
 
 $say = function () use ($message) {
-    $message = 'Bonjour';
+    $message = 'Hello';
     echo $message;
 };
 
@@ -121,18 +121,18 @@ $say();
 echo $message;
 ```
 
-Dans cet exemple, à l'intérieur de la fonction anonyme, la valeur du message $ est 'Salut'. Cependant, en dehors de la fonction anonyme, la valeur du message reste la même que 'Bonjour'.
+In this example, inside the anonymous function, the value of $ message is 'Hi'. However, apart from the anonymous function, the message value remains the same as 'Hello'.
 
-Si vous souhaitez passer une variable à une fonction anonyme par référence, vous devez utiliser l'opérateur `&` comme dans l'exemple suivant :
+If you want to pass a variable to an anonymous function by reference, you should use the `&` operator as in the following example :
 
 ```php
 <?php
 
-$message = 'Salut';
+$message = 'Hi';
 
-// $message passage par référence
+// $message passing by reference
 $say = function () use (&$message) {
-    $message = 'Bonjour';
+    $message = 'Hello';
     echo $message;
 };
 
@@ -141,15 +141,15 @@ $say();
 echo $message;
 ```
 
-Maintenant, vous voyez les messages « Bonjour » deux fois.
+Now you see the "Hello" messages twice.
 
 ### Instructions
 
-Créer une closure `$today` qui va afficher "Nous sommes le (numéro du jour en cours) (mois en cours) (année en cours)" 
+Create a `$today` closure that will display "It is (current month) (current day number), (current year)"
 
-Exemple : ```Nous sommes le 29 Juillet 2021```
+Example : `It is July 29, 2021`
 
-Créer une closure `$isLeapYear` qui va vérifier si l'année passée en paramètre est bissextiles.
+Create a `$isLeapYear` closure which will check if the year passed as a parameter is leap.
 
 ### Notions
 

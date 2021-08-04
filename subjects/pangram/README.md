@@ -2,13 +2,13 @@
 
 ### Instructions
 
-Déterminez si une phrase est un pangramme. Un pangramme (en grec : παν γράμμα, pan gramma, « chaque lettre ») est une phrase utilisant chaque lettre de l'alphabet au moins une fois. Le pangramme anglais le plus connu est :
+Determine if a sentence is a pangram. A pangram (in Greek: παν γράμμα, pan gramma, “each letter”) is a sentence using each letter of the alphabet at least once. The most famous English pangram is :
 
 > The quick brown fox jumps over the lazy dog.
 
-L'alphabet utilisé se compose de lettres ASCII `a` à `z`, inclusivement, et est insensible à la casse. L'entrée ne contiendra pas de symboles non ASCII.
+The alphabet used consists of ASCII letters `a` through` z`, inclusive, and is case insensitive. The entry will not contain non-ASCII symbols.
 
-Créer une fonction `isPangram(string): bool`
+Create a function `isPangram(string): bool`
 
 ### Notions
 

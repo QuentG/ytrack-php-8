@@ -1,55 +1,55 @@
 ### This is magic
 
-### Explications
+### Explanations
 
-Certaines fonctions prédéfinies par le compilateur php qui s'exécutent sur certains événements sont appelées `méthodes magiques` 🧙‍♂️. 
+Some functions predefined by the php compiler that run on certain events are called `magic methods` 🧙‍♂️.
 
-Les méthodes magiques commencent par le préfixe `__`, par exemple __construct, __get, __set. Il existe différents types de méthodes magiques en php. 
+Magic methods start with the prefix `__`, for example __construct, __get, __set. There are different types of magic methods in php.
 
-Liste ci-dessous : 
+List below :
 
-- __construct : est appelée lorsque nous créons un objet de notre classe. Fondamentalement, cela est utilisé pour créer un constructeur dans php5.
-
-
-- __destruct : est appelée lorsque l'objet de notre classe n'est pas défini. C'est juste à l'opposé de __construct.
+- __construct: is called when we create an object of our class. Basically this is used to create a constructor in php5.
 
 
-- __get : est appelé lorsque notre objet tente de lire une propriété ou une variable de la classe qui est inaccessible ou indisponible.
+- __destruct: is called when the object of our class is not defined. It's just the opposite of __construct.
 
 
-- __set : est appelé lorsqu'un objet de notre classe tente de définir la valeur de la propriété qui est vraiment inaccessible ou indisponible dans notre classe.
+- __get: is called when our object tries to read a property or a variable of the class which is inaccessible or unavailable.
 
 
-- __isset : les méthodes __isset se déclenchent lorsque la fonction isset() est appliquée sur n'importe quelle propriété de la classe qui est inaccessible ou indisponible.
+- __set: is called when an object of our class tries to set the value of the property which is really inaccessible or unavailable in our class.
 
 
-- __unset : __unset est quelque chose à l'opposé de la méthode isset. Cette méthode se déclenche lorsque la fonction unset() est appelée sur une propriété inaccessible ou indisponible de la classe.
+- __isset: __isset methods are triggered when the isset () function is applied to any property of the class that is inaccessible or unavailable.
 
 
-- __call : déclencheur de méthode magique __call lorsque nous essayons d'appeler une méthode ou une fonction de la classe qui est soit inaccessible, soit indisponible.
+- __unset: __unset is something the opposite of the isset method. This method is triggered when the unset () function is called on an unreachable or unavailable property of the class.
 
 
-- __callstatic : __callstatic execture lorsque la méthode inaccessible ou indisponible est dans un contexte statique.
+- __call: __call magic method trigger when we try to call a method or function of the class that is either unreachable or unavailable.
 
 
-- __sleep : les méthodes __sleep se déclenchent lorsque nous allons sérialiser votre objet de classe.
+- __callstatic: __callstatic execture when the unreachable or unavailable method is in a static context.
 
 
-- __wakeup : __wakeup s'exécute lorsque nous dé-sérialisons un objet de classe.
+- __sleep: __sleep methods are triggered when we are going to serialize your class object.
 
 
-- __toString : __toString s'exécute lorsque vous utilisez echo sur votre objet.
+- __wakeup: __wakeup runs when we deserialize a class object.
 
 
-- __invoke : __invoke appelé lorsque nous utilisons l'objet de votre classe comme fonction
+- __toString: __toString runs when you use echo on your object.
 
-Les méthodes magiques ci-dessus de php s'exécutent lorsque certains événements spécifiques se produisent sur votre objet de classe. 
 
-Par exemple, si vous faites simplement écho à votre objet, la méthode __toString se déclenche.
+- __invoke: __invoke called when we use the object of your class as a function
+
+The above magic php methods execute when certain specific events occur on your class object.
+
+For example, if you just echo your object, the __toString method fires.
 
 ### Instructions
 
-Créer une classe nommée `Magic` et implémentez-y les méthodes magiques suivantes : 
+Create a class named `Magic` and implement the following magic methods in it :
 
 - __construct
 - __destruct
@@ -58,9 +58,9 @@ Créer une classe nommée `Magic` et implémentez-y les méthodes magiques suiva
 - __isset
 - __toString
 
-Dans chacune de ses méthodes implémenter un echo qui signalera bien l'utilisation de chaque méthode.
+In each of its methods, implement an echo which will indicate the use of each method.
 
-Créer aussi une propiété publique nommée `card` qui sera de type string et qui aura pour valeur par defaut : 'As'
+Also create a public property named `card` which will be of type string and which will have the default value : 'As'
 
 ### Notions
 

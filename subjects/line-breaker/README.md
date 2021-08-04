@@ -2,21 +2,23 @@
 
 ### Instructions
 
-Créez une fonction `breakLines` qui effectue des sauts de ligne automatiques.
+Create a `breakLines` function that performs automatic line breaks.
 
-Il doit retourner une chaîne de caractères incluant des sauts de ligne : "\n" respectant les critères suivants :
+It must return a character string including line breaks : "\n" respecting the following criteria :
 
-1. Une ligne ne peut pas dépasser la longueur de la ligne.
-2. Chaque ligne doit être aussi longue que possible.
-3. Les sauts de ligne sont entre deux mots (sur un espace).
-4. La fonction conserve les sauts de ligne déjà présents.
-5. La fonction ne peut pas (erreur) diviser une ligne avec un mot plus grand que la taille maximale de la ligne.
+1. A line cannot exceed the length of the line.
+2. Each line should be as long as possible.
+3. Line breaks are between two words (on a space).
+4. The function keeps the line breaks already present.
+5. The function cannot (error) divide a line with a word larger than the maximum line size.
 
-`breakLines` avec les paramètres disponibles suivants :
-- La chaîne à casser : `string`
-- La longueur max de chaque phrase : `int`
+`breakLines` with the following available parameters:
 
-Exemple : 
+- The string to break : `string`
+- The maximum length of each sentence : `int`
+
+Example :
+
 ```php
 breakLines('Line with words', 15); // Line with words
 

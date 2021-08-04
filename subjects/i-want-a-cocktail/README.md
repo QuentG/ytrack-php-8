@@ -1,134 +1,136 @@
 ### I want a cocktail
 
-### Explications
+### Explanations
 
-La `POO` ⚡ (programmation orientée objet) est une forme particulière de programmation destinée à faciliter la maintenance et la réutilisation / adaptation de vos scripts PHP. Elle consiste à représenter des objets (du monde réel ou non) sous une forme d'entités informatiques. On représente généralement un objet global par ce que l'on appelle une classe. 
+The `POO` ⚡ (object oriented programming) is a particular form of programming intended to facilitate the maintenance and the reuse / adaptation of your PHP scripts. It consists of representing objects (from the real world or not) in the form of computer entities. We generally represent a global object by what we call a class.
 
-Une classe va regrouper un ensemble de fonctions et de propriétés pouvant agir sur l'objet. Si on prend par exemple une voiture dans le monde réel, on peut modéliser une voiture par une classe `Voiture` qui aura comme propriétés le nombre de roues, le nombre de portes, etc ...
+A class will group together a set of functions and properties that can act on the object. If we take for example a car in the real world, we can model a car by a class `Car` which will have as properties the number of wheels, the number of doors, etc ...
 
 ---
 
-#### Les classes
+#### The classes
 
-Une classe regroupe des fonctions et des variables (appelées cette fois `attributs`, car il s'agit des attributs d'une classe) qui interragissent avec l'objet. C'est à dire que pour un objet `voiture` par exemple, vous aurez une classe nommée `Voiture` et vous pourrez avoir une fonction qui modifie le niveau de carburant (le niveau de carburant étant un attribut de la classe que l'on ne peut modifier que via une fonction (appelée `méthode`) qui ira modifier cet attribut). 
+A class groups together functions and variables (this time called `attributes`, because they are attributes of a class) which interact with the object. That is to say that for a `car` object for example, you will have a class named` Car` and you will be able to have a function which modifies the fuel level (the fuel level being an attribute of the class that we can only modify via a function (called `method`) which will modify this attribute).
 
-On appelle ce principe **l'encapsulation des données**, le but de l'encapsulation des données étant de ne pas pouvoir accéder aux données de l'objet directement mais via des fonctions (appelées ici `méthodes`). Chaque attribut peut donc disposer de droits d'accès à l'extérieur de la classe
+This principle is called **data encapsulation**, the purpose of data encapsulation being not to be able to access the object's data directly but via functions (called here `methods`). Each attribute can therefore have access rights outside the class.
 
-Voyons de suite un exemple pour illustrer cela :
+Let's see an example to illustrate this :
 
 ```php
 <?php
 
- class Voiture 
+ class Car
  {
-      /** Déclaration des attributs */
-      public float $niveauCarburant;
-      public int $nombrePortes;
-      
-      //  ↙ Visibilité (on y reviendra plus tard)   
-      public int $nombreRoues;
-      //      ↖ Type   ↖ Nom de la variable
-      
+      /** Declaration of attributes */
+      public float $fuelLevel;
+      public int $doorsNumber;
+
+      //  ↙ Visibility (more on this later)
+      public int $wheelNumber;
+      //      ↖ Type   ↖ Variable Name
+
       /**
-      * Cette méthode un peu spéciale est le constructeur, 
-      * elle est exécutée lorsque vous "créez" votre objet. 
-      * Elle doit initialiser les attributs de la classe.
+      * This somewhat special method is the constructor,
+      * It is executed when you "create" your object.
+      * It must initialize the attributes of the class.
       */
       public function __construct()
       {
-           // ↙ $this signifie le contexte actuel
-           $this->niveauCarburant = 45.4; // <- la valeur par défaut
-           //         ↖ Attribut
-           $this->nombrePortes = 3;
-           $this->nombreRoues = 4;
+           // ↙ $this means the current context
+           $this->fuelLevel = 45.4; // <- the default value
+           //         ↖ Attribute
+           $this->doorsNumber = 3;
+           $this->wheelNumber = 4;
       }
  }
 ```
 
-Okkkk bon maintenant que l'on a notre objet... comment on fait pour s'en servir ? 🤔
+Okkkk good now that we have our object ... how do we use it? 🤔
 
 ---
 
-#### Créer un objet (instanciation d'une classe)
+#### Create an object (instantiate a class)
 
-Voici comment on crée un objet en PHP :
+Here is how to create an object in PHP :
 
-- Instanciation grâce au mot clé new suivi du nom de l'objet.
+- Instantiation using the new keyword followed by the name of the object.
 
 ```php
 <?php
 
-$voiture1 = new Voiture(); // Instanciation d'une nouvelle voiture
+$car1 = new Car(); // Instantiating a new car
 
-var_dump($voiture1); // Affichage de tout l'objet
+var_dump($car1); // Display of the whole object
 
--> object(Voiture)#1 (3) {
-  ["niveauCarburant"] => int(45.4)
-  ["nombrePortes"] => int(3)
-  ["nombreRoues"] => int(4)
+-> object(Car)#1 (3) {
+  ["fuelLevel"] => int(45.4)
+  ["doorsNumber"] => int(3)
+  ["wheelNumber"] => int(4)
 }
 
-// Récupération d'un attribut
-$voiture1->niveauCarburant; // 45.4
+// Retrieving an attribute
+$car1->fuelLevel; // 45.4
 ```
 
-La variable **$voiture1** représente l'objet qui est ici une voiture. Lorsque vous exécutez ce code, la méthode __construct() de la classe est exécutée. 
+The variable **$car1** represents the object which is here a car. When you run this code, the \_\_construct () method of the class is executed.
 
-Comme il s'agit d'une fonction, elle peut prendre elle aussi des paramètres 🤩. Tout dépend comment vous souhaitez coder votre classe, mais vous pourriez très bien avoir une fonction __construct() qui initialise les attributs en fonction des paramètres que vous lui fournissez.
+Comme il s'agit d'une fonction, elle peut prendre elle aussi des paramètres 🤩. Tout dépend comment vous souhaitez coder votre classe, mais vous pourriez très bien avoir une fonction \_\_construct() qui initialise les attributs en fonction des paramètres que vous lui fournissez.
 
-Voici ce que ça pourrait donner :
+As it is a function, it can also take parameters 🤩. It all depends on how you want to code your class, but you could very well have a \_\_construct() function that initializes the attributes based on the parameters you supply to it.
+
+Here is what it could give:
 
 ```php
 <?php
 
-  class Voiture 
+  class Car
   {
-      public float $niveauCarburant;
-      public int $nombrePortes;
-      public int $nombreRoues;
-      
-      public function __construct(float $niveauCarburant, int $nombrePortes, int $nombreRoues = 4) 
-      { 
-         $this->niveauCarburant = $niveauCarburant; 
-         $this->nombrePortes = $nombrePortes; 
-         $this->nombreRoues = $nombreRoues; 
-      } 
+      public float $fuelLevel;
+      public int $doorsNumber;
+      public int $wheelNumber;
+
+      public function __construct(float $fuelLevel, int $doorsNumber, int $wheelNumber = 4)
+      {
+         $this->fuelLevel = $fuelLevel;
+         $this->doorsNumber = $doorsNumber;
+         $this->wheelNumber = $wheelNumber;
+      }
   }
 ```
 
-Lorsque vous créerez l'objet voiture, vous allez pouvoir sans passer par les méthodes appropriées lui fixer un niveau de carburant, un nombre de portes et un nombre de roues (par défaut 4).
+When you create the car object, without going through the appropriate methods, you will be able to set a fuel level, a number of doors and a number of wheels (by default 4).
 
-Voici deux façons de créer l'objet :
+Here are two ways to create the object:
 
 ```php
-<?php 
+<?php
 
-  $voiture1 = new Voiture(50, 3); // 50 : niveau de carburant et 3 portes, on a pas besoin de spécifier le nombre de roues car il est de 4 par défaut.
-  
-  $voiture2 = new Voiture(10, 5, 6); // 10 : niveau de carburant, 5 portes et 6 roues.
+  $car1 = new Car(50, 3); // 50 : fuel level and 3 doors, there is no need to specify the number of wheels because it is 4 by default.
+
+  $car2 = new Car(10, 5, 6); // 10 : fuel level, 5 doors and 6 wheels.
 ```
 
-Il est important de signifier que les objets **$voiture1** et **$voiture2** sont deux objets différents qui peuvent avoir leurs propriétés propres.
+It is important to point out that the objects **$car1** and **$car2** are two different objects which can have their own properties.
 
-Vous commencez peut-être maintenant à comprendre avec quelle simplicité vous allez pouvoir créer autant d'objets que vous le souhaitez 😎.
+You may now begin to understand how easily you can create as many objects as you want 😎.
 
 _POO life_ 💯
 
 ### Instructions
 
-Créer une classe nommée `Mojito`.
+Create a class named `Mojito`.
 
-Cette classe devra avoir les attributs (+ valeurs de base) suivants : 
+This class must have the following attributes (+ base values) :
 
-- `alcoholRate` : Le taux d'alcool dans le sang
-    - Type : float
-    - Valeur : 0.15
-- `ingredients` : Les ingrédients qui constitue le Mojito
-    - Type : array
-    - Valeur : rhum, citron vert, eau gazeuse, menthe, sucre
-- `price` : Le prix du Mojito
-    - Type : int
-    - Valeur : 8
+- `alcoholRate` : The level of alcohol in the blood
+  - Type: float
+  - Value: 0.15
+- `ingredients` : The ingredients that make up the Mojito
+  - Type: array
+  - Value: rum, lime, sparkling water, mint, sugar
+- `price` : The price of the Mojito
+  - Type: int
+  - Value: 8
 
 ### Notions
 

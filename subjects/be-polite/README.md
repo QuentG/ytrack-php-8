@@ -1,59 +1,59 @@
 ### Be polite
 
-### Explications 
+### Explanations
 
-Comme la plupart des langages de programmation, PHP vous permet également d'écrire du code qui effectue différentes actions en fonction des résultats de conditions de test logiques ou comparatives au moment de l'exécution.
+Like most programming languages, PHP also allows you to write code that performs different actions based on the results of logical or comparative test conditions at run time.
 
-Cela signifie que vous pouvez créer des conditions de test sous la forme d'expressions évaluées à vrai ou faux et sur la base de ces résultats, vous pouvez effectuer certaines actions.
+This means that you can create test conditions in the form of expressions that evaluate to true or false and based on these results you can perform certain actions.
 
-Il existe plusieurs instructions en PHP que vous pouvez utiliser pour prendre des décisions :
+There are several statements in PHP that you can use to make decisions :
 
-- L'instruction if
-- L'instruction if... else
-- L'instruction if...elseif....else
+- The if statement
+- The if ... else statement
+- The if ... elseif .... else statement
 
-#### La déclaration if
+#### The if statement
 
-L'instruction if est utilisée pour exécuter un bloc de code uniquement si la condition spécifiée est vraie. Il s'agit des instructions conditionnelles PHP les plus simples et peuvent être écrites comme :
+The if statement is used to execute a block of code only if the specified condition is true. These are the simplest PHP conditional statements and can be written as :
 
 ```php
 <?php
 
  if (condition) {
-   // Code à exécuter 
+   // Code à exécuter
  }
 ```
 
---- 
+---
 
-#### La déclaration if... else
+#### The if ... else statement
 
-Vous pouvez améliorer le processus de prise de décision en proposant un choix alternatif en ajoutant une instruction else à l'instruction if. 
+You can improve the decision-making process by providing an alternative choice by adding an else statement to the if statement.
 
-L'instruction if...else vous permet d'exécuter un bloc de code si la condition spécifiée est évaluée à true et un autre bloc de code si elle est évaluée à false. Il peut s'écrire, comme ceci :
+The if ... else statement lets you execute one block of code if the specified condition evaluates to true and another block of code if it evaluates to false. It can be written, like this :
 
 ![img.png](img.png)
 
-#### Syntaxe : 
+#### Syntaxe :
 
 ```php
 <?php
  if (condition) {
-   // Code à exécuter si la condition est vraie
+   // Code to run if the condition is true
  } else {
-   // Code à exécuter si la condition est fausse
+   // Code to run if the condition is false
  }
 ```
 
---- 
+---
 
-#### L'instruction if...elseif...else 
+#### The if ... elseif .... else statement
 
-C'est une instruction spéciale utilisée pour combiner plusieurs instructions if...else.
+This is a special statement used to combine multiple if ... else statements.
 
 ![img_1.png](img_1.png)
 
-#### Syntaxe : 
+#### Syntax :
 
 ```php
 <?php
@@ -69,20 +69,17 @@ C'est une instruction spéciale utilisée pour combiner plusieurs instructions i
 
 ### Instructions
 
-Créer une variable nommée `$hour` qui récupère l'heure actuelle.
+Create a variable named `$hour` which retrieves the current time.
 
-A l'aide de l'instruction `if elseif else`, écrire un script qui va afficher une chaine de caractère en fonction de l'heure du jour.
+Using the `if elseif else` statement, write a script that will display a string according to the time of day.
 
-- Si l'heure est entre 6h et 12h inclus affichez : Bonjour ! Passe une bonne journée :)
+- If the time is between 6 a.m. and 12 p.m., display: Hello! Have a nice day :)
 
+- If the time is between 12 p.m. and 6 p.m. inclusive display: Have a good afternoon!
 
-- Si l'heure est entre 12h et 18h inclus affichez : Passe une bonne après midi !
+- If the time is between 6 p.m. and 9 p.m. inclusive, display: Good evening! Hope you had a good day!
 
-
-- Si l'heure est entre 18h et 21h inclus affichez : Bonsoir ! J'espère que tu as passé une bonne journée !
-
-
-- Sinon affichez : Bonne nuit ! A demain :) 
+- Otherwise display: Good night! See you tomorrow :)
 
 ### Notions
 

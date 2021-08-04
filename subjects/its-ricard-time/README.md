@@ -1,55 +1,56 @@
 ### It's ricard time ?
 
-### Explications 
+### Explanations
 
-L'instruction `do{ ... } while()` traduite par : 'répéter / faire ... tant que' est une alternative à l'instruction while().
+The `do {...} while ()` statement translated as: 'répéter / faire ... tant que' is an alternative to the while () statement.
 
-Elle permet de tester la condition après la première itération et exécution du premier bloc d'instructions. 
+It is used to test the condition after the first iteration and execution of the first block of instructions.
 
-Dans le cas de la boucle while, la condition est examinée avant la boucle tandis que pour la boucle do-while elle est examinée à la fin. Ainsi, même si cette condition n'est pas vérifiée, la boucle s'exécutera au moins une fois.
+In the case of the while loop, the condition is examined before the loop while for the do-while loop it is examined at the end. So even if this condition is not true, the loop will run at least once.
 
 ![img.png](img.png)
 
-#### Syntaxe :
+#### Syntax :
 
 ```php
 <?php
 
 do {
-  // Bloc d'instructions;
+  // Block of instructions;
 } while(condition);
 ```
 
---- 
+---
 
 #### Exemple :
 
 ```php
 <?php
 
-// Déclaration et initialisation du compteur
+// Declaration and initialization of the counter
 $i = 0;
 // Boucle générant la table de multiplication du 8
 do {
   echo "8 x ". $i . " = " . ( 8 * $i) . PHP_EOL;
-  $i++; // Incrémentation du compteur
+  $i++; // Counter increment
 } while($i <= 10);
 ```
 
-> Remarque : Il existe deux instructions qui permettent de modifier l'exécution des boucles, il s'agit de `break` et de `continue`.
+> Note : There are two instructions which allow to modify the execution of loops, they are `break` and` continue`.
 
 ---
 
 #### Break && continue
 
-L'instruction break permet de sortir de la boucle courante. C'est-à-dire qu'il interrompe directement l'itération. La condition de boucle est une condition qui est toujours vérifiée et, dans la boucle, on utilise break pour quitter celle-ci une fois que l'on est arrivé à nos fins.
+The break instruction is used to exit the current loop. That is, it directly interrupts the iteration. The loop condition is a condition that is always checked and, in the loop, we use break to exit the loop once we have reached our ends.
 
-`break` permet aussi de gérer des événements plus exceptionnels, comme des erreurs : 
-- En cas d'erreur, on quitte la boucle et on affiche un message.
+`break` also allows to handle more exceptional events, like errors:
 
-La seconde instruction est l'instruction `continue`. Cette instruction permet de sauter les instructions de l'itération courante, afin de passer directement à l'itération suivante.
+- In the event of an error, we exit the loop and display a message.
 
-Prenons un exemple sur les nombres pairs. Cette fois-ci, la variable $i sera incrémentée de 1. On utilisera l'instruction continue pour éviter les nombres impairs.
+The second instruction is the `continue` instruction. This instruction allows you to skip the instructions of the current iteration, in order to go directly to the next iteration.
+
+Let us take an example on even numbers. This time, the variable `$i` will be incremented by 1. We will use the continue instruction to avoid odd numbers.
 
 ```php
 <?php
@@ -68,16 +69,16 @@ do {
 
 ### Instructions
 
-Créer une variable nommée `$nbrRicard`.
+Create a variable named `$nbrRicard`.
 
-A l'aide de l'instruction `do{ ... } while()`, écrire un script qui va incrémenter le nombre de ricard bu en respectant les conditions suivantes :
+Using the `do {...} while ()` statement, write a script that will increment the number of ricard drunk while respecting the following conditions:
 
-- Avant chaque ricard bu affiché : Allez hop ricard numéro + le numéro du ricard actuel
-- Au 3ème ricard affichez : Il va bientôt falloir que j'arrête !
-- Au 5ème ricard affichez : Je suis plus très frais...
-- Au 7ème ricard stoppez la boucle.
+- Before each ricard drunk displayed : Come on ricard number + the number of the current ricard
+- At the 3rd ricard display: I'll have to stop soon!
+- At the 5th ricard display: I am no longer very fresh ...
+- At the 7th ricard, stop the loop.
 
-**Attention ! Ne pas oublier de sauter une ligne a la fin chaque echo.**
+**Warning ! Don't forget to skip a line at the end of each echo.**
 
 ### Notions
 
